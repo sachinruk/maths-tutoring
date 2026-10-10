@@ -215,20 +215,21 @@ details p { color: var(--muted); margin: 10px 0 0; }
   .section { padding: 56px 0; }
 }
 
-.formula .katex-display { text-align: left; margin: 12px 0 0; }
+.formula .katex-display, .formula .katex-display > .katex { text-align: left; margin: 12px 0 0; }
 
 /* WhatsApp */
 .btn-whatsapp {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background: #25d366;
-  border-color: #25d366;
-  color: #fff;
+  gap: 8px;
+  background: #fff;
+  border: 2px solid #25d366;
+  color: #128c4a;
+  padding: 10px 20px;
   margin-bottom: 20px;
 }
-.btn-whatsapp:hover { background: #1ebe5b; border-color: #1ebe5b; }
-.btn-whatsapp svg { width: 20px; height: 20px; }
+.btn-whatsapp:hover { background: #effcf4; border-color: #1ebe5b; }
+.btn-whatsapp svg { width: 18px; height: 18px; flex: none; color: #25d366; }
 
 .whatsapp-float {
   position: fixed;
