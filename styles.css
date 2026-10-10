@@ -250,3 +250,15 @@ details p { color: var(--muted); margin: 10px 0 0; }
 
 /* Form validation */
 .contact-form input:user-invalid { border-color: #c0392b; outline-color: #c0392b; }
+
+.badge {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+  padding: 4px 14px;
+  margin: 0 0 16px;
+}
