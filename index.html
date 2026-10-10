@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -51,6 +51,7 @@
       <a href="#top" class="brand">Sachin Abeywardana <span>HSC Maths Tutoring</span></a>
       <nav aria-label="Main">
         <a href="#about">About</a>
+        <a href="#videos">Videos</a>
         <a href="#courses">Courses</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
@@ -94,7 +95,49 @@
       </div>
     </section>
 
-    <section id="courses" class="section alt">
+    <section id="videos" class="section alt">
+      <div class="container">
+        <h2>Watch me teach</h2>
+        <p class="section-lead">A few of my worked lessons, so you can see how I explain things before booking.</p>
+        <div class="video-grid">
+          <article class="video-card">
+            <button class="video-facade" type="button" data-id="-4hwIgP7nms" aria-label="Play: Home loan repayments">
+              <img src="https://i.ytimg.com/vi/-4hwIgP7nms/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+              <span class="play" aria-hidden="true"></span>
+            </button>
+            <p class="tag">Advanced</p>
+            <h3>Home loan repayments</h3>
+          </article>
+          <article class="video-card">
+            <button class="video-facade" type="button" data-id="O4p9a-d6tIo" aria-label="Play: General solutions for sin, cos and tan">
+              <img src="https://i.ytimg.com/vi/O4p9a-d6tIo/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+              <span class="play" aria-hidden="true"></span>
+            </button>
+            <p class="tag">Trigonometry</p>
+            <h3>General solutions for sin, cos and tan</h3>
+          </article>
+          <article class="video-card">
+            <button class="video-facade" type="button" data-list="PLIx9QCwIhuRSiGtRmZNvORkI9nVTzb1CQ" aria-label="Play: Complex numbers series">
+              <img src="https://i.ytimg.com/vi/CNadwPOZINA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+              <span class="play" aria-hidden="true"></span>
+            </button>
+            <p class="tag">Extension 2</p>
+            <h3>Complex numbers series</h3>
+            <p class="video-note">3-part playlist: locus of lines, locus of circles, and trigonometry</p>
+          </article>
+          <article class="video-card">
+            <button class="video-facade" type="button" data-id="H8Wk_C0njpA" aria-label="Play: Motion and air resistance">
+              <img src="https://i.ytimg.com/vi/H8Wk_C0njpA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+              <span class="play" aria-hidden="true"></span>
+            </button>
+            <p class="tag">Extension 2</p>
+            <h3>Motion and air resistance</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section">
       <div class="container">
         <h2>Courses</h2>
         <p class="section-lead">Years 11 and 12, following the NSW (NESA) syllabus.</p>
@@ -137,7 +180,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt">
       <div class="container">
         <h2>How lessons work</h2>
         <div class="steps">
@@ -157,7 +200,7 @@
       </div>
     </section>
 
-    <section id="pricing" class="section alt">
+    <section id="pricing" class="section">
       <div class="container narrow center">
         <h2>Pricing</h2>
         <div class="price-card">
@@ -174,7 +217,7 @@
       </div>
     </section>
 
-    <section id="faq" class="section">
+    <section id="faq" class="section alt">
       <div class="container narrow">
         <h2>Frequently asked questions</h2>
         <details>
@@ -208,7 +251,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <section id="contact" class="section">
       <div class="container contact-grid">
         <div>
           <h2>Book your free trial lesson</h2>
@@ -273,6 +316,18 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".video-facade").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const src = btn.dataset.list
+          ? `https://www.youtube-nocookie.com/embed/videoseries?list=${btn.dataset.list}&autoplay=1`
+          : `https://www.youtube-nocookie.com/embed/${btn.dataset.id}?autoplay=1&rel=0`;
+        const iframe = document.createElement("iframe");
+        Object.assign(iframe, { src, title: btn.getAttribute("aria-label"), allowFullscreen: true });
+        iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+        iframe.className = "video-frame";
+        btn.replaceWith(iframe);
+      });
+    });
     document.getElementById("phone").addEventListener("input", (e) => {
       e.target.value = e.target.value.replace(/[^0-9+]/g, "").replace(/(?!^)\+/g, "");
     });

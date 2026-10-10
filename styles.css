@@ -263,3 +263,46 @@ details p { color: var(--muted); margin: 10px 0 0; }
   padding: 4px 14px;
   margin: 0 0 16px;
 }
+
+/* Videos */
+.video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.video-card h3 { margin-bottom: 4px; }
+.video-card .tag { margin-top: 14px; }
+.video-note { color: var(--muted); font-size: 0.92rem; margin: 0; }
+.video-facade,
+.video-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--navy);
+}
+.video-facade { position: relative; padding: 0; cursor: pointer; }
+.video-facade img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.2s; }
+.video-facade:hover img { transform: scale(1.03); }
+.play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 68px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(19, 41, 75, 0.85);
+  transition: background 0.15s;
+}
+.play::after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 14px;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent #fff;
+}
+.video-facade:hover .play { background: #ff0033; }
+
+@media (max-width: 860px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
