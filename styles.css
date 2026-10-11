@@ -306,3 +306,5 @@ details p { color: var(--muted); margin: 10px 0 0; }
 @media (max-width: 860px) {
   .video-grid { grid-template-columns: 1fr; }
 }
+
+.privacy { margin-top: 14px; font-size: 0.8rem; color: #8a9bb8; }
