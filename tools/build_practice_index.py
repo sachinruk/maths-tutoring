@@ -10,7 +10,7 @@ def main() -> None:
     groups = [
         ("Mathematics Advanced", ["2026-maths-advanced", "2025-maths-advanced"]),
         ("Mathematics Extension 1", ["2025-maths-extension-1"]),
-        ("Mathematics Extension 2", ["2026-maths-extension-2"]),
+        ("Mathematics Extension 2", ["2026-maths-extension-2", "2025-maths-extension-2"]),
     ]
     cards = []
     for course, keys in groups:

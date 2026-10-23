@@ -35,6 +35,12 @@ PAPERS: dict[str, PaperConfig] = {
         "pack": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-extension-1/2025",
         "total_marks": 70, "multiple_choice_through": 10,
     },
+    "2025-maths-extension-2": {
+        "year": 2025, "course": "Mathematics Extension 2", "slug": "/practice/2025-maths-extension-2/",
+        "pdf": "https://www.nsw.gov.au/sites/default/files/noindex/2025-10/2025-hsc-maths-extension-2.pdf",
+        "pack": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-extension-2/2025",
+        "total_marks": 100, "multiple_choice_through": 10,
+    },
     "2026-maths-advanced": {
         "year": 2026, "course": "Mathematics Advanced", "slug": "/practice/2026-maths-advanced/",
         "pdf": "https://www.nsw.gov.au/sites/default/files/noindex/2026-10/2026-hsc-maths-advanced.pdf",

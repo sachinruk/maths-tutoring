@@ -207,6 +207,7 @@ test('a question deep link clears incompatible filters without starting time', (
 
 test('published papers include every marked section and link to their own official PDF', () => {
   const papers = [
+    { slug: '2025-maths-extension-2', parts: 47, marks: 100, questions: 16, written: [14, 16, 15, 15, 15, 15], key: 'DBCBABDACD' },
     { slug: '2025-maths-extension-1', parts: 34, marks: 70, questions: 14, written: [15, 14, 16, 15], key: 'ABBCDDAABC' },
     { slug: '2026-maths-advanced', parts: 52, marks: 100, questions: 33, written: [2, 4, 4, 2, 2, 4, 3, 4, 3, 3, 5, 3, 4, 4, 2, 5, 4, 4, 6, 7, 4, 3, 8], key: 'CDBDAABCAD' },
     { slug: '2026-maths-extension-2', parts: 48, marks: 100, questions: 16, written: [15, 15, 14, 15, 15, 16], key: 'ABDDBCCBAC' },

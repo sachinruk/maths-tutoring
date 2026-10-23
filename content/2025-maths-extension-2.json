@@ -1,0 +1,745 @@
+[
+  {
+    "number": 1,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "A line through two points",
+    "tags": [
+      "Vectors",
+      "Coordinate geometry"
+    ],
+    "steps": [
+      "The direction from \\((-3,1)\\) to \\((1,4)\\) is \\((4,3)\\). Using \\((-3,1)\\) as a point gives the line equation in option D."
+    ],
+    "answer": "D: \\(\\begin{pmatrix}x\\\\y\\end{pmatrix}=\\begin{pmatrix}-3\\\\1\\end{pmatrix}+\\lambda\\begin{pmatrix}4\\\\3\\end{pmatrix}\\)."
+  },
+  {
+    "number": 2,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Negating an existential statement",
+    "tags": [
+      "Proof",
+      "Logic"
+    ],
+    "steps": [
+      "Negating “there exists an integer whose square is odd” gives “for every integer, its square is not odd”. An integer square is either odd or even."
+    ],
+    "answer": "B: \\(\\forall x\\in\\mathbb Z,\\ x^2\\text{ is even}.\\)"
+  },
+  {
+    "number": 3,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Square roots of a complex number",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Squaring \\(2-i\\) gives \\(4-4i+i^2=3-4i\\). Its negative is the other square root."
+    ],
+    "answer": "C: \\(2-i\\) and \\(-2+i\\)."
+  },
+  {
+    "number": 4,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Amplitude from the speed equation",
+    "tags": [
+      "Mechanics",
+      "Simple harmonic motion"
+    ],
+    "steps": [
+      "The speed is zero at the turning points: \\(-x^2+2x+8=0\\), so \\(x=-2\\) or \\(x=4\\). The midpoint is \\(1\\), and the distance from it to either turning point is \\(3\\)."
+    ],
+    "answer": "B: \\(3\\text{ m}.\\)"
+  },
+  {
+    "number": 5,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Writing a contrapositive",
+    "tags": [
+      "Proof",
+      "Logic"
+    ],
+    "steps": [
+      "For \\(P\\Rightarrow Q\\), the contrapositive is \\(\\neg Q\\Rightarrow\\neg P\\). Here \\(\\neg Q\\) is \\(x>0\\), and \\(\\neg P\\) is \\(x^2-2x<0\\)."
+    ],
+    "answer": "A: If \\(x>0\\), then \\(x^2-2x<0\\)."
+  },
+  {
+    "number": 6,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Moduli of sums and differences",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "For unit complex numbers, \\(|z+w|^2+|z-w|^2=2|z|^2+2|w|^2=4\\). Therefore \\(|z-w|^2=4-\\frac94=\\frac74\\)."
+    ],
+    "answer": "B: \\(|z-w|=\\frac{\\sqrt7}{2}.\\)"
+  },
+  {
+    "number": 7,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Arguments subtended by a circle",
+    "tags": [
+      "Complex numbers",
+      "Geometry"
+    ],
+    "steps": [
+      "The points \\(z-2i\\) form the circle of radius \\(1\\) centred at \\(-2i\\). From the origin, its tangent rays make angles \\(\\arcsin(1/2)=\\pi/6\\) on either side of the direction \\(-\\pi/2\\)."
+    ],
+    "answer": "D: \\(-\\frac{2\\pi}{3}\\leq\\operatorname{Arg}(z-2i)\\leq-\\frac{\\pi}{3}.\\)"
+  },
+  {
+    "number": 8,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Acceleration as a function of displacement",
+    "tags": [
+      "Mechanics",
+      "Calculus"
+    ],
+    "steps": [
+      "Since \\(a=\\frac{dv}{dt}=\\frac{dv}{dx}\\frac{dx}{dt}=v\\frac{dv}{dx}\\), acceleration is zero where the velocity is zero or has a stationary point. The displayed velocity curve has three zeros and two turning points, with acceleration negative at the far left and positive at the far right; graph A has this pattern."
+    ],
+    "answer": "A."
+  },
+  {
+    "number": 9,
+    "part": "",
+    "marks": 1,
+    "page": 6,
+    "title": "Classifying a complex quadrilateral",
+    "tags": [
+      "Complex numbers",
+      "Geometry"
+    ],
+    "steps": [
+      "The relation \\(v+z=u+w\\) says the diagonals have the same midpoint, so \\(UVWZ\\) is a parallelogram. Also \\(u-w=ki(v-z)\\), so its diagonals are perpendicular. A parallelogram with perpendicular diagonals is a rhombus."
+    ],
+    "answer": "C: Rhombus."
+  },
+  {
+    "number": 10,
+    "part": "",
+    "marks": 1,
+    "page": 6,
+    "title": "Reparametrising a space curve",
+    "tags": [
+      "Vectors",
+      "Parametric curves"
+    ],
+    "steps": [
+      "Set the parameter in option D to \\(s=2t+\\pi/2\\). It ranges over all real values, and the coordinates become \\((\\cos s,s,-\\sin s)\\), the same helix as \\((\\cos t,-t,\\sin t)\\) after taking \\(s=-t\\)."
+    ],
+    "answer": "D."
+  },
+  {
+    "number": 11,
+    "part": "a",
+    "marks": 2,
+    "page": 18,
+    "title": "Conjugate and rotated complex numbers",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Write \\(z=a+ib\\), with \\(a,b>0\\) as shown. Then \\(\\bar z=a-ib\\), the reflection of \\(z\\) in the real axis, while \\(i\\bar z=b+ia\\), at coordinates \\((b,a)\\). Mark both points on the diagram."
+    ],
+    "answer": "\\(\\bar z\\) is the reflection of \\(z\\) across the real axis; \\(i\\bar z\\) is the point \\((b,a)\\), in the first quadrant.",
+    "figure": "2025-ext2-conjugates.svg"
+  },
+  {
+    "number": 11,
+    "part": "b",
+    "marks": 2,
+    "page": 7,
+    "title": "Multiplying complex numbers in polar form",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Multiply the moduli and add the arguments: \\(wz=(2\\cdot3)e^{i(\\pi/6+\\pi/6)}=6e^{i\\pi/3}\\)."
+    ],
+    "answer": "Modulus \\(6\\); argument \\(\\frac{\\pi}{3}\\)."
+  },
+  {
+    "number": 11,
+    "part": "c(i)",
+    "marks": 1,
+    "page": 7,
+    "title": "Squaring a complex number",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Expand \\((x+iy)^2\\) and use \\(i^2=-1\\)."
+    ],
+    "answer": "\\(z^2=(x^2-y^2)+2xyi.\\)"
+  },
+  {
+    "number": 11,
+    "part": "c(ii)",
+    "marks": 2,
+    "page": 7,
+    "title": "Taking a complex reciprocal",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Multiply numerator and denominator by the conjugate \\(x-iy\\) to make the denominator real."
+    ],
+    "answer": "\\(\\displaystyle\\frac1z=\\frac{x-iy}{x^2+y^2}=\\frac{x}{x^2+y^2}-\\frac{y}{x^2+y^2}i.\\) This requires \\(z\\ne0\\)."
+  },
+  {
+    "number": 11,
+    "part": "d(i)",
+    "marks": 1,
+    "page": 8,
+    "title": "Resolving a force along a vector",
+    "tags": [
+      "Vectors",
+      "Mechanics"
+    ],
+    "steps": [
+      "The direction vector has magnitude \\(\\sqrt{2^2+(-2)^2+1^2}=3\\). Scale it by \\(12/3=4\\) to obtain the force vector."
+    ],
+    "answer": "\\(\\mathbf F_1=8\\mathbf i-8\\mathbf j+4\\mathbf k.\\)"
+  },
+  {
+    "number": 11,
+    "part": "d(ii)",
+    "marks": 1,
+    "page": 8,
+    "title": "Adding force vectors",
+    "tags": [
+      "Vectors",
+      "Mechanics"
+    ],
+    "steps": [
+      "Add the force components: \\((8,-8,4)+(-6,12,4)=(2,4,8)\\)."
+    ],
+    "answer": "\\(\\mathbf F_3=2\\mathbf i+4\\mathbf j+8\\mathbf k.\\)"
+  },
+  {
+    "number": 11,
+    "part": "d(iii)",
+    "marks": 1,
+    "page": 8,
+    "title": "Dot product of force and displacement",
+    "tags": [
+      "Vectors",
+      "Mechanics"
+    ],
+    "steps": [
+      "Take the componentwise dot product with \\(\\mathbf d=(1,1,2)\\): \\(2+4+8\\cdot2=22\\)."
+    ],
+    "answer": "\\(\\mathbf F_3\\cdot\\mathbf d=22.\\)"
+  },
+  {
+    "number": 11,
+    "part": "e",
+    "marks": 2,
+    "page": 8,
+    "title": "Proof by contradiction with surds",
+    "tags": [
+      "Proof",
+      "Inequalities"
+    ],
+    "steps": [
+      "Assume the negation, \\(\\sqrt3+\\sqrt5\\leq\\sqrt{11}\\). Squaring positive sides gives \\(8+2\\sqrt{15}\\leq11\\), hence \\(2\\sqrt{15}\\leq3\\). Squaring again gives \\(60\\leq9\\), a contradiction."
+    ],
+    "answer": "Therefore \\(\\sqrt3+\\sqrt5>\\sqrt{11}\\)."
+  },
+  {
+    "number": 11,
+    "part": "f",
+    "marks": 2,
+    "page": 8,
+    "title": "Completing the square in an integral",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Complete the square: \\(7-x^2-6x=16-(x+3)^2\\). Apply the standard inverse-sine integral with the substitution \\(u=(x+3)/4\\)."
+    ],
+    "answer": "\\(\\displaystyle\\int\\frac{5}{\\sqrt{7-x^2-6x}}\\,dx=5\\sin^{-1}\\!\\left(\\frac{x+3}{4}\\right)+C.\\)"
+  },
+  {
+    "number": 12,
+    "part": "a",
+    "marks": 3,
+    "page": 9,
+    "title": "A definite integral by parts",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Choose \\(u=x\\) and \\(dv=\\sin x\\,dx\\), so \\(du=dx\\) and \\(v=-\\cos x\\). Integration by parts gives \\(\\int_0^{\\pi/2}x\\sin x\\,dx=[-x\\cos x]_0^{\\pi/2}+\\int_0^{\\pi/2}\\cos x\\,dx\\).",
+      "The product term is zero at both endpoints. The remaining integral is \\([\\sin x]_0^{\\pi/2}=1\\)."
+    ],
+    "answer": "\\(1\\)."
+  },
+  {
+    "number": 12,
+    "part": "b",
+    "marks": 3,
+    "page": 9,
+    "title": "Induction for higher derivatives",
+    "tags": [
+      "Proof",
+      "Induction",
+      "Calculus"
+    ],
+    "steps": [
+      "For \\(n=1\\), the product rule gives \\(y^{\\prime}=(2x+1)e^{2x}\\), agreeing with the proposed expression.",
+      "Assume \\(y^{(k)}=(2^kx+k2^{k-1})e^{2x}\\) for some integer \\(k\\ge1\\). Differentiating gives \\(y^{(k+1)}=[2^k+2(2^kx+k2^{k-1})]e^{2x}\\).",
+      "Simplifying yields \\([2^{k+1}x+(k+1)2^k]e^{2x}\\), exactly the statement for \\(k+1\\). Therefore induction proves the formula for every positive integer."
+    ],
+    "answer": "\\(y^{(n)}=(2^nx+n2^{n-1})e^{2x}\\), for all integers \\(n\\ge1\\)."
+  },
+  {
+    "number": 12,
+    "part": "c",
+    "marks": 3,
+    "page": 9,
+    "title": "A half-plane from complex distances",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Write \\(z=x+iy\\). Squaring both non-negative distances gives \\((x+5)^2+(y-1)^2>(x-3)^2+(y+3)^2\\).",
+      "After cancellation, \\(16x-8y+8>0\\), or \\(y<2x+1\\). Sketch the line through \\((-1/2,0)\\) and \\((0,1)\\) as a dashed boundary, then shade the side below it. The origin is a useful test point in the shaded half-plane."
+    ],
+    "answer": "The open half-plane \\(y<2x+1\\); its boundary is excluded.",
+    "figure": "2025-ext2-region.svg"
+  },
+  {
+    "number": 12,
+    "part": "d",
+    "marks": 4,
+    "page": 9,
+    "title": "Partial fractions with a quadratic factor",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Write the fraction as \\(A/(4-x)+(Bx+C)/(x^2+1)\\). Multiplication by the denominator gives \\(x^2-2x+9=A(x^2+1)+(Bx+C)(4-x)\\).",
+      "Substituting \\(x=4\\) gives \\(A=1\\). Setting \\(x=0\\) then gives \\(C=2\\); comparing the squared terms gives \\(B=0\\). Thus the integrand is \\(1/(4-x)+2/(x^2+1)\\).",
+      "Integrate each term, allowing for the negative derivative of \\(4-x\\)."
+    ],
+    "answer": "\\(-\\ln|4-x|+2\\tan^{-1}x+C\\)."
+  },
+  {
+    "number": 12,
+    "part": "e",
+    "marks": 3,
+    "page": 9,
+    "title": "Stopping distance under resistance",
+    "tags": [
+      "Mechanics",
+      "Differential equations"
+    ],
+    "steps": [
+      "Take distance \\(s\\) along the initial direction of travel. Before the particle stops, Newton’s law and \\(a=v\\,dv/ds\\) give \\(v\\,dv/ds=-(k+v^2)\\), after cancelling the mass.",
+      "Separate variables and integrate from initial speed \\(V_0\\) to zero: \\(S=-\\int_{V_0}^{0}v/(k+v^2)\\,dv=-\\tfrac12[\\ln(k+v^2)]_{V_0}^{0}\\).",
+      "The logarithms combine into a ratio. Since \\(k>0\\), the result is non-negative."
+    ],
+    "answer": "\\(S=\\frac12\\ln\\left(\\frac{k+V_0^2}{k}\\right)\\text{ m}\\)."
+  },
+  {
+    "number": 13,
+    "part": "a",
+    "marks": 3,
+    "page": 10,
+    "title": "Reflecting the limits of an integral",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Use \\(u=m-x\\), so \\(dx=-du\\). The lower endpoint \\(x=m-4\\) becomes \\(u=4\\), and the upper endpoint \\(x=m-2\\) becomes \\(u=2\\).",
+      "Also \\(e^{-x}=e^{-m}e^u\\) and \\(x-m+1=1-u\\). Consequently the transformed integral is \\(e^{-m}\\int_4^2 e^u/(u-1)\\,du\\).",
+      "Reversing the endpoints introduces a minus sign, leaving the integral defining \\(A\\)."
+    ],
+    "answer": "The integral equals \\(-e^{-m}A\\), so \\(k=-e^{-m}\\)."
+  },
+  {
+    "number": 13,
+    "part": "b",
+    "marks": 4,
+    "page": 10,
+    "title": "A unit vector perpendicular to two vectors",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "Perpendicularity gives \\(2x+4y-3z=0\\) and \\(-4x-5y+3z=0\\). Adding them gives \\(y=-2x\\); substituting into the first equation gives \\(z=-2x\\).",
+      "The unit-length condition is \\(x^2+y^2+z^2=1\\). Hence \\(9x^2=1\\), so \\(x=\\pm1/3\\), with \\(y\\) and \\(z\\) carrying the opposite signs."
+    ],
+    "answer": "\\(\\mathbf c=\\pm\\frac13(1,-2,-2)\\)."
+  },
+  {
+    "number": 13,
+    "part": "c(i)",
+    "marks": 2,
+    "page": 10,
+    "title": "Proving the arithmetic-geometric mean inequality",
+    "tags": [
+      "Proof",
+      "Inequalities"
+    ],
+    "steps": [
+      "Since \\(a,b>0\\), the square \\((\\sqrt a-\\sqrt b)^2\\) is non-negative. Expanding gives \\(a+b-2\\sqrt{ab}\\ge0\\). Divide by 2.",
+      "Equality holds exactly when \\(a=b\\)."
+    ],
+    "answer": "\\(\\frac{a+b}{2}\\ge\\sqrt{ab}\\)."
+  },
+  {
+    "number": 13,
+    "part": "c(ii)",
+    "marks": 2,
+    "page": 10,
+    "title": "A strict inequality from distinct inputs",
+    "tags": [
+      "Proof",
+      "Inequalities"
+    ],
+    "steps": [
+      "Apply part (i) to \\(a=2n+1\\) and \\(b=2n+3\\). Both are positive for \\(n\\ge0\\), and they differ, so \\(\\sqrt{(2n+1)(2n+3)}<2n+2\\).",
+      "Divide by the positive quantity \\((2n+2)\\sqrt{2n+3}\\), then multiply by \\(\\sqrt{2n+1}\\), to obtain the required comparison."
+    ],
+    "answer": "\\(\\frac{2n+1}{2n+2}<\\frac{\\sqrt{2n+1}}{\\sqrt{2n+3}}\\), for every integer \\(n\\ge0\\)."
+  },
+  {
+    "number": 13,
+    "part": "d",
+    "marks": 4,
+    "page": 10,
+    "title": "Symmetry followed by a half-angle substitution",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Call the given integral \\(J\\). First substitute \\(u=\\pi/2-x\\). Since sine and cosine exchange, \\(J=\\int_0^{\\pi/2}(\\pi/2-x)/(1+\\sin x+\\cos x)\\,dx\\).",
+      "Adding this expression to the original gives \\(2J=(\\pi/2)K\\), where \\(K=\\int_0^{\\pi/2}dx/(1+\\sin x+\\cos x)\\). Thus \\(J=\\pi K/4\\).",
+      "For \\(K\\), put \\(t=\\tan(x/2)\\). The endpoints become 0 and 1, and the half-angle identities reduce the integrand to \\(dt/(1+t)\\). Hence \\(K=[\\ln(1+t)]_0^1=\\ln2\\)."
+    ],
+    "answer": "\\(J=\\frac{\\pi\\ln2}{4}\\)."
+  },
+  {
+    "number": 14,
+    "part": "a(i)",
+    "marks": 3,
+    "page": 11,
+    "title": "Reducing an integral of an even cotangent power",
+    "tags": [
+      "Integration",
+      "Reduction formulas",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Separate the final factor of \\(\\cot^2\\theta\\), and replace it by \\(\\csc^2\\theta-1\\):",
+      "\\[I_n=\\int_{\\pi/4}^{\\pi/2}\\cot^{2n-2}\\theta\\,\\csc^2\\theta\\,d\\theta-I_{n-1}.\\]",
+      "The substitution \\(u=\\cot\\theta\\) integrates the first term as \\(-\\cot^{2n-1}\\theta/(2n-1)\\). Its upper value is zero and its lower value is \\(-1/(2n-1)\\)."
+    ],
+    "answer": "\\(\\displaystyle I_n=\\frac1{2n-1}-I_{n-1},\\quad n>0\\)."
+  },
+  {
+    "number": 14,
+    "part": "a(ii)",
+    "marks": 1,
+    "page": 11,
+    "title": "Applying a reduction formula twice",
+    "tags": [
+      "Integration",
+      "Reduction formulas"
+    ],
+    "steps": [
+      "The starting integral is \\(I_0=\\pi/4\\). Thus \\(I_1=1-\\pi/4\\), and \\(I_2=1/3-I_1\\)."
+    ],
+    "answer": "\\(I_2=\\pi/4-2/3\\)."
+  },
+  {
+    "number": 14,
+    "part": "b(i)",
+    "marks": 2,
+    "page": 11,
+    "title": "Velocity from acceleration as a function of position",
+    "tags": [
+      "Motion",
+      "Differential equations"
+    ],
+    "steps": [
+      "Use \\(a=v\\,dv/dx\\): \\(v\\,dv=32x(x^2+3)\\,dx\\). Integration gives \\(v^2=16(x^2+3)^2+C\\).",
+      "The initial conditions \\(x=0\\), \\(v=-12\\) give \\(C=0\\). The velocity starts negative and its magnitude never vanishes, so retain the negative branch throughout."
+    ],
+    "answer": "\\(v=-4(x^2+3)\\text{ m s}^{-1}\\)."
+  },
+  {
+    "number": 14,
+    "part": "b(ii)",
+    "marks": 2,
+    "page": 11,
+    "title": "Travel time with position-dependent velocity",
+    "tags": [
+      "Motion",
+      "Integration"
+    ],
+    "steps": [
+      "The velocity is always negative, so travelling 3 metres from the origin means reaching \\(x=-3\\). Since \\(dt=dx/v\\),",
+      "\\[t=-\\frac14\\int_0^{-3}\\frac{dx}{x^2+3}=-\\frac1{4\\sqrt3}\\left[\\tan^{-1}(x/\\sqrt3)\\right]_0^{-3}.\\]",
+      "The inverse tangent at the lower displacement is \\(-\\pi/3\\)."
+    ],
+    "answer": "\\(t=\\dfrac{\\pi}{12\\sqrt3}\\text{ s}\\)."
+  },
+  {
+    "number": 14,
+    "part": "c(i)",
+    "marks": 1,
+    "page": 11,
+    "title": "Identifying a root of unity",
+    "tags": [
+      "Complex numbers",
+      "Roots of unity"
+    ],
+    "steps": [
+      "Multiplying the given sum by \\(w-1\\) makes all intermediate powers cancel, leaving \\(w^7-1=0\\). Also \\(w\\ne1\\), because substituting 1 into the original sum gives 7."
+    ],
+    "answer": "\\(w^7=1\\), so \\(w\\) is a non-trivial seventh root of unity."
+  },
+  {
+    "number": 14,
+    "part": "c(ii)",
+    "marks": 2,
+    "page": 11,
+    "title": "Conjugate roots written as powers",
+    "tags": [
+      "Complex numbers",
+      "Roots of unity",
+      "Polynomials"
+    ],
+    "steps": [
+      "A non-real root of a polynomial with real coefficients comes with its complex conjugate. Hence the second root is \\(\\overline{w+w^2+w^4}\\).",
+      "Every root of unity has modulus 1, so \\(\\overline w=1/w=w^6\\). Reduce exponents modulo 7: \\(\\overline w^{\\,2}=w^{12}=w^5\\) and \\(\\overline w^{\\,4}=w^{24}=w^3\\)."
+    ],
+    "answer": "The other root is \\(w^3+w^5+w^6\\)."
+  },
+  {
+    "number": 14,
+    "part": "c(iii)",
+    "marks": 1,
+    "page": 11,
+    "title": "The product of conjugate roots",
+    "tags": [
+      "Complex numbers",
+      "Roots of unity",
+      "Polynomials"
+    ],
+    "steps": [
+      "The constant term is the product of the roots. Expanding \\((w+w^2+w^4)(w^3+w^5+w^6)\\) and using \\(w^7=1\\) gives \\(3+w+w^2+\\cdots+w^6\\). The original relation says the six non-constant powers sum to \\(-1\\)."
+    ],
+    "answer": "\\(c=2\\)."
+  },
+  {
+    "number": 14,
+    "part": "d",
+    "marks": 3,
+    "page": 11,
+    "title": "Comparing sums of reciprocal arithmetic terms",
+    "tags": [
+      "Proof",
+      "Inequalities"
+    ],
+    "steps": [
+      "Let \\(u=1/a>0\\). The four reciprocal terms are \\(u,u+k,u+2k,u+3k\\), so",
+      "\\[a+d-b-c=\\left(\\frac1u-\\frac1{u+k}\\right)-\\left(\\frac1{u+2k}-\\frac1{u+3k}\\right).\\]",
+      "This is \\(\\dfrac{k}{u(u+k)}-\\dfrac{k}{(u+2k)(u+3k)}\\). The second denominator is strictly larger than the first because \\(u,k>0\\). The difference is therefore positive."
+    ],
+    "answer": "\\(b+c<a+d\\)."
+  },
+  {
+    "number": 15,
+    "part": "a",
+    "marks": 4,
+    "page": 12,
+    "title": "Area of a parallelogram using a scalar product",
+    "tags": [
+      "Vectors",
+      "Geometry"
+    ],
+    "steps": [
+      "The side lengths satisfy \\(|\\mathbf a|^2=4^2+3^2+(-1)^2=26\\) and \\(|\\mathbf b|^2=2^2+(-1)^2+3^2=14\\). Their scalar product is \\(8-3-3=2\\).",
+      "If \\(\\phi\\) is the angle between them, \\(\\cos\\phi=2/\\sqrt{26\\cdot14}\\). Hence",
+      "\\[\\text{Area}^2=|\\mathbf a|^2|\\mathbf b|^2\\sin^2\\phi=26\\cdot14-2^2=360.\\]",
+      "Take the positive square root for an area."
+    ],
+    "answer": "The area is \\(6\\sqrt{10}\\) square units."
+  },
+  {
+    "number": 15,
+    "part": "b",
+    "marks": 4,
+    "page": 12,
+    "title": "Maximum acceleration in simple harmonic motion",
+    "tags": [
+      "Simple harmonic motion",
+      "Motion"
+    ],
+    "steps": [
+      "Two cycles per second means frequency \\(f=2\\), so the angular frequency is \\(\\omega=2\\pi f=4\\pi\\).",
+      "For SHM, \\(v^2=\\omega^2(A^2-x^2)\\) and \\(v_{\\max}=\\omega A\\). At \\(|x|=1/4\\), the given half-speed condition gives \\(\\omega^2A^2/4=\\omega^2(A^2-1/16)\\).",
+      "Therefore \\(3A^2/4=1/16\\), so \\(A=1/(2\\sqrt3)\\). The acceleration is \\(-\\omega^2x\\), whose largest positive value occurs at \\(x=-A\\)."
+    ],
+    "answer": "\\(a_{\\max}=\\omega^2A=\\dfrac{8\\pi^2}{\\sqrt3}\\text{ m s}^{-2}\\)."
+  },
+  {
+    "number": 15,
+    "part": "c(i)",
+    "marks": 3,
+    "page": 12,
+    "title": "A complex ratio and the half-angle formula",
+    "tags": [
+      "Complex numbers",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Write \\(\\cos\\theta+i\\sin\\theta=e^{i\\theta}\\). Factoring out \\(e^{i\\theta/2}\\) from numerator and denominator gives",
+      "\\[\\frac{1+e^{i\\theta}}{1-e^{i\\theta}}=\\frac{e^{-i\\theta/2}+e^{i\\theta/2}}{e^{-i\\theta/2}-e^{i\\theta/2}}=\\frac{2\\cos(\\theta/2)}{-2i\\sin(\\theta/2)}.\\]",
+      "Since \\(1/(-i)=i\\), the result is \\(i\\cot(\\theta/2)\\). Both expressions require \\(\\theta\\notin2\\pi\\mathbb Z\\)."
+    ],
+    "answer": "\\(\\displaystyle\\frac{1+\\cos\\theta+i\\sin\\theta}{1-\\cos\\theta-i\\sin\\theta}=i\\cot(\\theta/2)\\)."
+  },
+  {
+    "number": 15,
+    "part": "c(ii)",
+    "marks": 2,
+    "page": 12,
+    "title": "Sixth roots by De Moivre’s theorem",
+    "tags": [
+      "Complex numbers",
+      "Roots of unity"
+    ],
+    "steps": [
+      "If \\(w^6=-1\\), then \\(|w|^6=1\\), so \\(|w|=1\\). Write \\(w=\\cos\\phi+i\\sin\\phi\\).",
+      "De Moivre’s theorem gives \\(w^6=\\cos6\\phi+i\\sin6\\phi\\). To equal \\(-1\\), the angle must satisfy \\(6\\phi=(2j+1)\\pi\\). The six values \\(j=0,\\ldots,5\\) give all distinct roots."
+    ],
+    "answer": "\\(\\displaystyle w_j=\\cos\\frac{(2j+1)\\pi}{6}+i\\sin\\frac{(2j+1)\\pi}{6},\\quad j=0,\\ldots,5\\)."
+  },
+  {
+    "number": 15,
+    "part": "c(iii)",
+    "marks": 2,
+    "page": 12,
+    "title": "Mapping the six roots to the required solutions",
+    "tags": [
+      "Complex numbers",
+      "Roots of unity"
+    ],
+    "steps": [
+      "Put \\(w=(z-1)/(z+1)\\). Then \\(w^6=-1\\), so use one of the six roots in part (ii). Rearranging gives \\(z=(1+w)/(1-w)\\). No sixth root of \\(-1\\) equals 1, so this denominator is non-zero.",
+      "Apply part (i) with \\(\\theta=(2j+1)\\pi/6\\). The half-angle is \\((2j+1)\\pi/12\\), producing six distinct values."
+    ],
+    "answer": "\\(\\displaystyle z=i\\cot\\frac{(2j+1)\\pi}{12},\\quad j=0,1,2,3,4,5\\)."
+  },
+  {
+    "number": 16,
+    "part": "a",
+    "marks": 4,
+    "page": 13,
+    "title": "Bounding complex roots with the triangle inequality",
+    "tags": [
+      "Complex numbers",
+      "Proof",
+      "Inequalities"
+    ],
+    "steps": [
+      "Suppose, for a contradiction, that a solution has \\(|z|\\le1/2\\). Write the left side as \\(\\sum_{j=1}^{n}z^j\\cos(j\\theta)\\).",
+      "The triangle inequality and \\(|\\cos(j\\theta)|\\le1\\) imply",
+      "\\[1=\\left|\\sum_{j=1}^{n}z^j\\cos(j\\theta)\\right|\\le\\sum_{j=1}^{n}|z|^j\\le\\sum_{j=1}^{n}2^{-j}=1-2^{-n}<1.\\]",
+      "This is impossible. The finite geometric sum is strictly less than 1, so the contradiction excludes the boundary as well as the interior."
+    ],
+    "answer": "Every solution satisfies \\(|z|>1/2\\)."
+  },
+  {
+    "number": 16,
+    "part": "b",
+    "marks": 5,
+    "page": 13,
+    "title": "Projectile motion with linear resistance",
+    "tags": [
+      "Projectile motion",
+      "Differential equations"
+    ],
+    "steps": [
+      "The launch components are \\(\\dot x(0)=50(4/5)=40\\) and \\(\\dot y(0)=-50(3/5)=-30\\). Solving \\(\\ddot x=-k\\dot x\\) and using \\(x(0)=0\\) gives",
+      "\\[\\dot x=40e^{-kt},\\qquad x=\\frac{40}{k}(1-e^{-kt}).\\]",
+      "For the vertical component, \\(\\dot y+10/k\\) decays exponentially. The initial velocity and \\(y(0)=0\\) therefore give",
+      "\\[\\dot y=(10/k-30)e^{-kt}-10/k,\\quad y=\\frac{10/k-30}{k}(1-e^{-kt})-\\frac{10t}{k}.\\]",
+      "Eliminate time using \\(e^{-kt}=1-kx/40\\) and \\(t=-\\ln(1-kx/40)/k\\)."
+    ],
+    "answer": "\\(\\displaystyle y=\\frac{1-3k}{4k}x+\\frac{10}{k^2}\\ln\\left(1-\\frac{kx}{40}\\right),\\quad0\\le x<40/k\\)."
+  },
+  {
+    "number": 16,
+    "part": "c(i)",
+    "marks": 2,
+    "page": 14,
+    "title": "The closest point on a line",
+    "tags": [
+      "Vectors",
+      "Optimisation"
+    ],
+    "steps": [
+      "Minimising distance is equivalent to minimising its square. Since \\(|\\mathbf d|=1\\),",
+      "\\[f(\\lambda)^2=|\\mathbf a-\\mathbf b+\\lambda\\mathbf d|^2=|\\mathbf a-\\mathbf b|^2+2\\lambda(\\mathbf a-\\mathbf b)\\cdot\\mathbf d+\\lambda^2.\\]",
+      "This quadratic opens upwards. Its derivative vanishes at \\(2(\\mathbf a-\\mathbf b)\\cdot\\mathbf d+2\\lambda=0\\), giving the unique minimum."
+    ],
+    "answer": "\\(\\lambda_0=(\\mathbf b-\\mathbf a)\\cdot\\mathbf d\\)."
+  },
+  {
+    "number": 16,
+    "part": "c(ii)",
+    "marks": 1,
+    "page": 14,
+    "title": "The shortest connecting segment is perpendicular",
+    "tags": [
+      "Vectors",
+      "Geometry"
+    ],
+    "steps": [
+      "The connecting vector is \\(\\overrightarrow{PB}=\\mathbf b-\\mathbf a-\\lambda_0\\mathbf d\\). Its scalar product with \\(\\mathbf d\\) is \\((\\mathbf b-\\mathbf a)\\cdot\\mathbf d-\\lambda_0|\\mathbf d|^2=\\lambda_0-\\lambda_0=0\\)."
+    ],
+    "answer": "\\(\\overrightarrow{PB}\\cdot\\mathbf d=0\\), so PB is perpendicular to the line direction."
+  },
+  {
+    "number": 16,
+    "part": "c(iii)",
+    "marks": 3,
+    "page": 14,
+    "title": "Distance between a line and a sphere",
+    "tags": [
+      "Vectors",
+      "Geometry"
+    ],
+    "steps": [
+      "First find the line’s distance from the origin. Using part (i) with \\(\\mathbf b=\\mathbf0\\), the closest point has vector \\(\\mathbf p_0=\\mathbf a-(\\mathbf a\\cdot\\mathbf d)\\mathbf d\\).",
+      "Because \\(|\\mathbf d|=1\\), its distance from the origin is \\(D=\\sqrt{|\\mathbf a|^2-(\\mathbf a\\cdot\\mathbf d)^2}\\).",
+      "If \\(D>1\\), move one unit from the origin towards this closest point to reach the sphere; the remaining gap is \\(D-1\\). If \\(D\\le1\\), the line intersects or touches the sphere, so the shortest distance is zero."
+    ],
+    "answer": "\\(\\displaystyle\\max\\left\\{0,\\sqrt{|\\mathbf a|^2-(\\mathbf a\\cdot\\mathbf d)^2}-1\\right\\}\\) units."
+  }
+]
