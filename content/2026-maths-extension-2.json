@@ -1,0 +1,727 @@
+[
+  {
+    "number": 1,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Conjugate roots",
+    "tags": [
+      "Complex numbers",
+      "Polynomials"
+    ],
+    "steps": [
+      "Real coefficients make \\(3-i\\) another root. The roots sum to 10, so the remaining root is \\(10-(3+i)-(3-i)=4\\)."
+    ],
+    "answer": "A: \\(a=3-i,\\ b=4\\)."
+  },
+  {
+    "number": 2,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Vector magnitude",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "The length is \\(\\sqrt{(-2)^2+3^2+(-6)^2}=\\sqrt{49}\\)."
+    ],
+    "answer": "B: \\(7\\)."
+  },
+  {
+    "number": 3,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Equation of a sphere",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "The centre-radius equation is \\((x+1)^2+(y-3)^2+z^2=81\\). Expanding gives \\(x^2+2x+y^2-6y+z^2=71\\)."
+    ],
+    "answer": "D."
+  },
+  {
+    "number": 4,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Intersecting complex regions",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "The modulus inequality is the closed disc centred at \\((2,3)\\) with radius 1. The second condition is \\(y\\le x\\), so retain the small cap below the line \\(y=x\\), including its boundary."
+    ],
+    "answer": "D."
+  },
+  {
+    "number": 5,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Argument of a quotient",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "The angle difference is the argument of \\(3+4i\\), modulo \\(2\\pi\\). Its modulus is 5, so its sine is imaginary part divided by modulus."
+    ],
+    "answer": "B: \\(\\sin\\theta=\\frac45\\)."
+  },
+  {
+    "number": 6,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Negating quantifiers",
+    "tags": [
+      "Proof"
+    ],
+    "steps": [
+      "Change “for every” to “there exists”, change “there exists” to “for every”, and negate the equality. Keep the stated domains of the variables."
+    ],
+    "answer": "C: \\(\\exists p>0\\text{ such that }\\forall q>p,\\ q^2\\ne p\\)."
+  },
+  {
+    "number": 7,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Partial fractions and primitives",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "The decomposition is \\(\\frac1{7(x+1)}-\\frac1{7(x-6)}+\\frac1{(x-6)^2}\\). Its primitive contains two logarithms and a term proportional to \\((x-6)^{-1}\\)."
+    ],
+    "answer": "C; a primitive is \\(\\frac17\\ln|x+1|-\\frac17\\ln|x-6|-\\frac1{x-6}+K\\)."
+  },
+  {
+    "number": 8,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Complex triangle area",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "At the vertex \\(2z-iz\\), the two side vectors are \\(iz\\) and \\(-2z\\). They are perpendicular, with lengths \\(|z|\\) and \\(2|z|\\), so the area is half their product."
+    ],
+    "answer": "B: \\(|z|^2\\)."
+  },
+  {
+    "number": 9,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Comparing vector lines",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "The second direction vector is \\(-2\\) times the first. Also \\((3,2,-2)=(2,3,-4)+(1,-1,2)\\), so the second base point lies on the first line. The lines coincide, hence intersect and are parallel."
+    ],
+    "answer": "A."
+  },
+  {
+    "number": 10,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Counterexample to an inflection claim",
+    "tags": [
+      "Proof",
+      "Calculus"
+    ],
+    "steps": [
+      "For option C, \\(f^{\\prime\\prime}(x)=20x^3+12x^2=4x^2(5x+3)\\). This is zero at 0 but positive on both sides sufficiently close to 0, so concavity does not change there."
+    ],
+    "answer": "C: \\(f(x)=x^5+x^4\\)."
+  },
+  {
+    "number": 11,
+    "part": "a",
+    "marks": 1,
+    "page": 6,
+    "title": "Writing a contrapositive",
+    "tags": [
+      "Proof"
+    ],
+    "steps": [
+      "The contrapositive of “if P then Q” is “if not Q then not P”. For integers, not even means odd."
+    ],
+    "answer": "If a is odd, then a cubed is odd."
+  },
+  {
+    "number": 11,
+    "part": "b(i)",
+    "marks": 1,
+    "page": 6,
+    "title": "Adding complex numbers",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Collect real and imaginary parts: \\(3(3+2i)+(-1-5i)=9-1+(6-5)i\\)."
+    ],
+    "answer": "\\(8+i\\)."
+  },
+  {
+    "number": 11,
+    "part": "b(ii)",
+    "marks": 1,
+    "page": 6,
+    "title": "Conjugate multiplication",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Use \\(\\bar z=3-2i\\): \\(2\\bar zw=2(3-2i)(-1-5i)=2(-13-13i)\\)."
+    ],
+    "answer": "\\(-26-26i\\)."
+  },
+  {
+    "number": 11,
+    "part": "c",
+    "marks": 2,
+    "page": 6,
+    "title": "Angle between unit vectors",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "Both position vectors have length 1. Their dot product gives \\(\\cos\\theta=1/\\sqrt{10}\\). Hence \\(\\tan^2\\theta=(1-\\cos^2\\theta)/\\cos^2\\theta\\)."
+    ],
+    "answer": "\\(\\tan^2\\theta=9\\)."
+  },
+  {
+    "number": 11,
+    "part": "d",
+    "marks": 2,
+    "page": 6,
+    "title": "Square roots of a complex number",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "Put \\((x+iy)^2=11+60i\\). Then \\(x^2-y^2=11\\), \\(xy=30\\), and \\(x^2+y^2=|11+60i|=61\\). Thus \\(x^2=36\\), \\(y^2=25\\); the signs agree because \\(xy>0\\)."
+    ],
+    "answer": "\\(6+5i\\) and \\(-6-5i\\)."
+  },
+  {
+    "number": 11,
+    "part": "e",
+    "marks": 2,
+    "page": 6,
+    "title": "Product with the conjugate",
+    "tags": [
+      "Complex numbers",
+      "Proof"
+    ],
+    "steps": [
+      "If \\(z=re^{i\\theta}\\), then \\(\\bar z=re^{-i\\theta}\\) and \\(|z|=r\\). Multiplying gives \\(z\\bar z=r^2e^{i\\theta-i\\theta}=r^2\\)."
+    ],
+    "answer": "\\(z\\bar z=|z|^2\\)."
+  },
+  {
+    "number": 11,
+    "part": "f",
+    "marks": 3,
+    "page": 7,
+    "title": "Completing the square in an integral",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Write \\(6x-x^2=9-(x-3)^2\\). A primitive is \\(\\sin^{-1}((x-3)/3)\\).",
+      "At the limits \\(x=3\\) and \\(x=3/2\\), the inverse sine values are 0 and \\(-\\pi/6\\)."
+    ],
+    "answer": "\\(\\frac\\pi6\\)."
+  },
+  {
+    "number": 11,
+    "part": "g(i)",
+    "marks": 1,
+    "page": 7,
+    "title": "Modulus of a power",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "\\(|z|=a\\sqrt2\\) since \\(a>0\\). The modulus of the fifth power is the fifth power of the modulus."
+    ],
+    "answer": "\\(|z^5|=4\\sqrt2\\,a^5\\)."
+  },
+  {
+    "number": 11,
+    "part": "g(ii)",
+    "marks": 2,
+    "page": 7,
+    "title": "Principal argument of a power",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "\\(\\arg z=\\pi/4\\), so an argument of \\(z^5\\) is \\(5\\pi/4\\). Subtract \\(2\\pi\\) to enter the principal range \\((-\\pi,\\pi]\\)."
+    ],
+    "answer": "\\(\\operatorname{Arg}(z^5)=-\\frac{3\\pi}4\\)."
+  },
+  {
+    "number": 12,
+    "part": "a(i)",
+    "marks": 3,
+    "page": 8,
+    "title": "Exponential form of a trigonometric identity",
+    "tags": [
+      "Complex numbers",
+      "Proof"
+    ],
+    "steps": [
+      "Expand the fourth power. Since \\((2i)^4=16\\), the left side is \\(\\frac1{16}(e^{4i\\theta}-4e^{2i\\theta}+6-4e^{-2i\\theta}+e^{-4i\\theta})\\).",
+      "Pair conjugate exponentials using the supplied identity: \\(e^{4i\\theta}+e^{-4i\\theta}=2\\cos4\\theta\\) and \\(e^{2i\\theta}+e^{-2i\\theta}=2\\cos2\\theta\\)."
+    ],
+    "answer": "\\(\\left(\\frac{e^{i\\theta}-e^{-i\\theta}}{2i}\\right)^4=\\frac18(\\cos4\\theta-4\\cos2\\theta+3)\\)."
+  },
+  {
+    "number": 12,
+    "part": "a(ii)",
+    "marks": 2,
+    "page": 8,
+    "title": "Integrating a fourth power of sine",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Euler’s sine identity identifies the fourth power in part (i) as \\(\\sin^4\\theta\\). Integrate the three terms separately, dividing by each inner frequency."
+    ],
+    "answer": "\\(\\int\\sin^4\\theta\\,d\\theta=\\frac{3\\theta}8-\\frac{\\sin2\\theta}4+\\frac{\\sin4\\theta}{32}+C\\)."
+  },
+  {
+    "number": 12,
+    "part": "b",
+    "marks": 2,
+    "page": 8,
+    "title": "Constructing a real polynomial",
+    "tags": [
+      "Polynomials",
+      "Complex numbers"
+    ],
+    "steps": [
+      "Include the conjugate zeroes \\(1-6i\\) and \\(3+4i\\). The conjugate pairs give \\((x-1)^2+36\\) and \\((x-3)^2+16\\)."
+    ],
+    "answer": "One example is \\(P(x)=(x-2)(x^2-2x+37)(x^2-6x+25)\\)."
+  },
+  {
+    "number": 12,
+    "part": "c",
+    "marks": 2,
+    "page": 8,
+    "title": "Applying the arithmetic-geometric mean inequality",
+    "tags": [
+      "Proof",
+      "Inequalities"
+    ],
+    "steps": [
+      "Apply the given inequality to each factor: \\(a+7b\\ge2\\sqrt{7ab}\\), \\(b+2c\\ge2\\sqrt{2bc}\\), and \\(c+14a\\ge2\\sqrt{14ac}\\).",
+      "All factors are positive, so multiplication preserves the inequalities. Their product is at least \\(8\\sqrt{196a^2b^2c^2}=112abc\\)."
+    ],
+    "answer": "\\((a+7b)(b+2c)(c+14a)\\ge112abc\\)."
+  },
+  {
+    "number": 12,
+    "part": "d",
+    "marks": 3,
+    "page": 9,
+    "title": "Recovering displacement from acceleration",
+    "tags": [
+      "Mechanics",
+      "Simple harmonic motion"
+    ],
+    "steps": [
+      "The graph has period 4 and acceleration amplitude \\(\\pi^2\\), starting at its maximum. Thus \\(\\ddot x=\\pi^2\\cos(\\pi t/2)\\).",
+      "Integrating gives \\(\\dot x=2\\pi\\sin(\\pi t/2)+C_1\\). Initial rest gives \\(C_1=0\\); integrating again gives \\(x=-4\\cos(\\pi t/2)+C_2\\). Use \\(x(0)=-2\\) to obtain \\(C_2=2\\)."
+    ],
+    "answer": "\\(x(t)=2-4\\cos\\left(\\frac{\\pi t}{2}\\right)\\)."
+  },
+  {
+    "number": 12,
+    "part": "e",
+    "marks": 3,
+    "page": 9,
+    "title": "Exponential substitution",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Put \\(u=e^x\\), so \\(du=e^x\\,dx\\). The integral becomes \\(\\int(1+u)/(1+u^2)\\,du\\).",
+      "Split it into \\(\\int du/(1+u^2)+\\int u\\,du/(1+u^2)\\), then substitute back."
+    ],
+    "answer": "\\(\\tan^{-1}(e^x)+\\frac12\\ln(1+e^{2x})+C\\)."
+  },
+  {
+    "number": 13,
+    "part": "a",
+    "marks": 2,
+    "page": 10,
+    "title": "Difference of squares pattern",
+    "tags": [
+      "Proof"
+    ],
+    "steps": [
+      "Every positive multiple of 4 is \\(4n\\) for a positive integer \\(n\\). The displayed pattern suggests consecutive terms differing by 2: \\((n+1)^2-(n-1)^2=4n\\).",
+      "Both bases are non-negative integers, so this supplies a difference of integer squares for every such multiple."
+    ],
+    "answer": "\\(4n=(n+1)^2-(n-1)^2\\), for every integer \\(n\\ge1\\)."
+  },
+  {
+    "number": 13,
+    "part": "b",
+    "marks": 2,
+    "page": 10,
+    "title": "Distance in one oscillation",
+    "tags": [
+      "Simple harmonic motion",
+      "Mechanics"
+    ],
+    "steps": [
+      "Complete the square: \\(v^2=16-2(x-2)^2\\). The turning points occur at \\(v=0\\), giving \\(x=2\\pm2\\sqrt2\\), so the amplitude is \\(2\\sqrt2\\).",
+      "One full period traverses four amplitudes, regardless of the starting point."
+    ],
+    "answer": "\\(8\\sqrt2\\text{ m}\\)."
+  },
+  {
+    "number": 13,
+    "part": "c",
+    "marks": 3,
+    "page": 10,
+    "title": "Tangent half-angle substitution",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Let \\(u=\\tan(\\theta/2)\\). Then \\(\\cos\\theta=(1-u^2)/(1+u^2)\\), \\(\\sin\\theta=2u/(1+u^2)\\), and \\(d\\theta=2\\,du/(1+u^2)\\).",
+      "The integral simplifies to \\(\\int du/(u^2-2u+4)=\\int du/((u-1)^2+3)\\)."
+    ],
+    "answer": "\\(\\frac1{\\sqrt3}\\tan^{-1}\\left(\\frac{\\tan(\\theta/2)-1}{\\sqrt3}\\right)+C\\), on each interval where the substitution is continuous."
+  },
+  {
+    "number": 13,
+    "part": "d",
+    "marks": 3,
+    "page": 10,
+    "title": "Vertical motion with quadratic resistance",
+    "tags": [
+      "Mechanics",
+      "Differential equations"
+    ],
+    "steps": [
+      "During descent, measure distance \\(s\\) downwards from the highest point and speed \\(v\\ge0\\). Newton’s law gives \\(v\\,dv/ds=10-0.1v^2\\).",
+      "Let \\(y=v^2\\). Then \\(dy/ds+0.2y=20\\), with \\(y(0)=0\\), so \\(v^2=100(1-e^{-s/5})\\).",
+      "At the ground, \\(s=5\\ln(676/100)\\), hence \\(v^2=100(1-100/676)=14400/169\\)."
+    ],
+    "answer": "\\(v=\\frac{120}{13}\\approx9.23\\text{ m s}^{-1}\\)."
+  },
+  {
+    "number": 13,
+    "part": "e(i)",
+    "marks": 2,
+    "page": 10,
+    "title": "Irrationality by contradiction",
+    "tags": [
+      "Proof"
+    ],
+    "steps": [
+      "Suppose \\(\\sqrt6=p/q\\) in lowest positive integer terms. Then \\(p^2=6q^2\\), so \\(p\\) is even; write \\(p=2r\\).",
+      "Then \\(2r^2=3q^2\\), which makes \\(q\\) even too. This contradicts \\(p\\) and \\(q\\) having no common factor."
+    ],
+    "answer": "\\(\\sqrt6\\) is irrational."
+  },
+  {
+    "number": 13,
+    "part": "e(ii)",
+    "marks": 2,
+    "page": 10,
+    "title": "Using a known irrational number",
+    "tags": [
+      "Proof"
+    ],
+    "steps": [
+      "Suppose \\(r=\\sqrt3-\\sqrt2\\) is rational. Squaring gives \\(r^2=5-2\\sqrt6\\), hence \\(\\sqrt6=(5-r^2)/2\\) would be rational.",
+      "This contradicts part (i)."
+    ],
+    "answer": "\\(\\sqrt3-\\sqrt2\\) is irrational."
+  },
+  {
+    "number": 14,
+    "part": "a",
+    "marks": 4,
+    "page": 11,
+    "title": "Power failure followed by projectile motion",
+    "tags": [
+      "Vectors",
+      "Mechanics"
+    ],
+    "steps": [
+      "The squared distance to the transmitter is \\((3-t/4)^2+2^2+(t/4)^2\\). Setting it to 9 gives \\(t^2-12t+32=0\\), so the helicopter first enters the 3 m boundary at \\(t=4\\) s.",
+      "At that instant its height is 52 m and its upward velocity is \\(1/4\\text{ m s}^{-1}\\). If \\(\\tau\\) is time after power loss, height is \\(52+\\tau/4-5\\tau^2\\).",
+      "Setting the height to zero gives \\(20\\tau^2-\\tau-208=0\\). The positive root is \\((1+129)/40\\)."
+    ],
+    "answer": "\\(\\tau=\\frac{13}{4}=3.25\\text{ s}\\)."
+  },
+  {
+    "number": 14,
+    "part": "b",
+    "marks": 3,
+    "page": 12,
+    "title": "Volume by discs and integration by parts",
+    "tags": [
+      "Integration",
+      "Volumes"
+    ],
+    "steps": [
+      "Squaring \\(y=x\\sqrt{e^x}\\) gives \\(y^2=x^2e^x\\). The disc method gives \\(V=\\pi\\int_0^3x^2e^x\\,dx\\).",
+      "Integrating by parts twice gives the primitive \\(e^x(x^2-2x+2)\\). Evaluating at 3 and 0 yields \\(5e^3-2\\)."
+    ],
+    "answer": "\\(V=\\pi(5e^3-2)\\) cubic units."
+  },
+  {
+    "number": 14,
+    "part": "c(i)",
+    "marks": 1,
+    "page": 13,
+    "title": "Perpendicular vector condition",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "With direction vector \\(\\mathbf d=(6,2,-3)\\), use \\(\\overrightarrow{BA}\\cdot\\mathbf d=0\\): \\((4-3b,5-4b,2-4b)\\cdot(6,2,-3)=28-14b=0\\)."
+    ],
+    "answer": "\\(b=2\\)."
+  },
+  {
+    "number": 14,
+    "part": "c(ii)",
+    "marks": 2,
+    "page": 13,
+    "title": "Two points making a given angle",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "Now \\(B=(6,8,8)\\), so \\(|AB|=\\sqrt{4+9+36}=7\\). Triangle ABC is right-angled at A. With angle C equal to \\(\\pi/4\\), it has \\(|AC|=|AB|=7\\).",
+      "The line direction \\((6,2,-3)\\) also has length 7. Thus the two choices are \\(C=A\\pm(6,2,-3)\\)."
+    ],
+    "answer": "\\(\\overrightarrow{OC}=(10,7,-1)\\) or \\((-2,3,5)\\)."
+  },
+  {
+    "number": 14,
+    "part": "d(i)",
+    "marks": 2,
+    "page": 14,
+    "title": "Separating a velocity equation",
+    "tags": [
+      "Mechanics",
+      "Differential equations"
+    ],
+    "steps": [
+      "The equation of motion used here is \\(dv/dt=-(k+v^2)\\). Separating and integrating from initial velocity u to velocity v gives \\(t=-\\int_u^v ds/(k+s^2)\\).",
+      "Use \\(\\int ds/(k+s^2)=k^{-1/2}\\tan^{-1}(s/\\sqrt k)\\), since \\(k>0\\)."
+    ],
+    "answer": "\\(t=\\frac1{\\sqrt k}\\left[\\tan^{-1}\\left(\\frac u{\\sqrt k}\\right)-\\tan^{-1}\\left(\\frac v{\\sqrt k}\\right)\\right]\\)."
+  },
+  {
+    "number": 14,
+    "part": "d(ii)",
+    "marks": 3,
+    "page": 14,
+    "title": "Testing the direction of motion",
+    "tags": [
+      "Mechanics",
+      "Inequalities"
+    ],
+    "steps": [
+      "Substitute the given time in part (i): \\(\\tan^{-1}(v/\\sqrt k)=\\tan^{-1}(u/\\sqrt k)-\\pi/4\\).",
+      "Since \\(u>0\\), the right side lies between \\(-\\pi/4\\) and \\(\\pi/4\\). Therefore \\(v<0\\) exactly when \\(\\tan^{-1}(u/\\sqrt k)<\\pi/4\\). Monotonicity of inverse tangent gives \\(u<\\sqrt k\\)."
+    ],
+    "answer": "\\(0<u<\\sqrt k\\), using the relation in part (i), with force in the fixed negative direction."
+  },
+  {
+    "number": 15,
+    "part": "a",
+    "marks": 4,
+    "page": 15,
+    "title": "Induction for a reciprocal sum",
+    "tags": [
+      "Proof",
+      "Induction"
+    ],
+    "steps": [
+      "Let \\(S_n=\\sum_{r=n+1}^{2n}1/r\\). For \\(n=2\\), \\(S_2=1/3+1/4=14/24>13/24\\).",
+      "Assume \\(S_k>13/24\\) for an integer \\(k\\ge2\\). Comparing consecutive sums, \\(S_{k+1}-S_k=\\frac1{2k+1}+\\frac1{2k+2}-\\frac1{k+1}=\\frac1{(2k+1)(2k+2)}>0\\).",
+      "Thus \\(S_{k+1}>S_k>13/24\\), completing the induction."
+    ],
+    "answer": "\\(\\displaystyle\\sum_{r=n+1}^{2n}\\frac1r>\\frac{13}{24}\\) for all integers \\(n>1\\)."
+  },
+  {
+    "number": 15,
+    "part": "b",
+    "marks": 4,
+    "page": 15,
+    "title": "Reflecting a point in a line",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "The diagram shows \\(PM\\) perpendicular to the line. Write \\(M=A+\\lambda(B-A)=(1+\\lambda,-1+\\lambda,2+\\lambda)\\), using direction \\((1,1,1)\\).",
+      "Perpendicularity gives \\((P-M)\\cdot(1,1,1)=0\\), so \\((3-\\lambda)-\\lambda+(3-\\lambda)=0\\). Hence \\(\\lambda=2\\) and \\(M=(3,1,4)\\).",
+      "Because M is the midpoint, \\(Q=2M-P\\)."
+    ],
+    "answer": "\\(Q=(2,3,3)\\)."
+  },
+  {
+    "number": 15,
+    "part": "c",
+    "marks": 3,
+    "page": 16,
+    "title": "Length of a complex spiral",
+    "tags": [
+      "Complex numbers",
+      "Sequences & series"
+    ],
+    "steps": [
+      "The first step runs from \\(z_1=8\\) to \\(z_2=6i\\), so its length is \\(\\sqrt{8^2+6^2}=10\\).",
+      "Each subsequent difference is multiplied by \\(3i/4\\), so its length is multiplied by \\(3/4\\). The total is the convergent geometric sum \\(10/(1-3/4)\\)."
+    ],
+    "answer": "\\(40\\)."
+  },
+  {
+    "number": 15,
+    "part": "d(i)",
+    "marks": 2,
+    "page": 17,
+    "title": "A point on a translated unit circle",
+    "tags": [
+      "Complex numbers"
+    ],
+    "steps": [
+      "The radius is 1, so \\(z_1-w=\\cos(-2\\pi/3)+i\\sin(-2\\pi/3)=-1/2-i\\sqrt3/2\\). Add \\(w=2+i\\)."
+    ],
+    "answer": "\\(z_1=\\frac32+i\\left(1-\\frac{\\sqrt3}{2}\\right)\\)."
+  },
+  {
+    "number": 15,
+    "part": "d(ii)",
+    "marks": 2,
+    "page": 17,
+    "title": "Tangency from the origin",
+    "tags": [
+      "Complex numbers",
+      "Vectors"
+    ],
+    "steps": [
+      "Write \\(z_2=x+iy\\). The circle gives \\((x-2)^2+(y-1)^2=1\\). A radius is perpendicular to its tangent, so \\((x,y)\\cdot(x-2,y-1)=0\\).",
+      "Subtracting these equations gives \\(2x+y=4\\). Substitution produces \\((x-2)(5x-6)=0\\). The point shown above and to the left of the centre is \\((6/5,8/5)\\)."
+    ],
+    "answer": "For the point shown, \\(z_2=\\frac65+\\frac85i\\). The other tangent point is \\(2+0i\\)."
+  },
+  {
+    "number": 16,
+    "part": "a",
+    "marks": 4,
+    "page": 18,
+    "title": "Unit-circle roots from an imaginary part",
+    "tags": [
+      "Complex numbers",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Put \\(z=e^{i\\theta}\\), with \\(0\\le\\theta<2\\pi\\). The imaginary-part condition becomes \\(\\sin3\\theta+\\sin2\\theta+\\sin\\theta=0\\).",
+      "Using \\(\\sin3\\theta+\\sin\\theta=2\\sin2\\theta\\cos\\theta\\), factor as \\(\\sin2\\theta(2\\cos\\theta+1)=0\\).",
+      "The first factor gives \\(\\theta=0,\\pi/2,\\pi,3\\pi/2\\); the second gives \\(\\theta=2\\pi/3,4\\pi/3\\)."
+    ],
+    "answer": "\\(z\\in\\left\\{1,-1,i,-i,\\frac{-1+i\\sqrt3}{2},\\frac{-1-i\\sqrt3}{2}\\right\\}\\)."
+  },
+  {
+    "number": 16,
+    "part": "b(i)",
+    "marks": 1,
+    "page": 18,
+    "title": "Subtracting two related integrals",
+    "tags": [
+      "Integration",
+      "Proof"
+    ],
+    "steps": [
+      "Combine the integrands over the common denominator: \\(\\frac1{(1+x^2)^n}-\\frac1{(1+x^2)^{n-1}}=\\frac{1-(1+x^2)}{(1+x^2)^n}\\). Integrating both sides from 0 to 1 gives the required relation."
+    ],
+    "answer": "\\(I_n-I_{n-1}=\\displaystyle\\int_0^1\\frac{-x^2}{(1+x^2)^n}\\,dx\\)."
+  },
+  {
+    "number": 16,
+    "part": "b(ii)",
+    "marks": 3,
+    "page": 18,
+    "title": "Evaluating a related integral",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "First, \\(I_1=[\\tan^{-1}x]_0^1=\\pi/4\\). To use part (i), differentiate \\(x/(1+x^2)\\).",
+      "Since \\(\\frac{d}{dx}\\frac{x}{1+x^2}=\\frac{1-x^2}{(1+x^2)^2}\\), its integral is \\(I_2+\\int_0^1\\frac{-x^2}{(1+x^2)^2}\\,dx=I_2+(I_2-I_1)\\), using part (i).",
+      "The boundary value is \\([x/(1+x^2)]_0^1=1/2\\), so \\(2I_2-I_1=1/2\\)."
+    ],
+    "answer": "\\(I_2=\\frac14+\\frac\\pi8\\)."
+  },
+  {
+    "number": 16,
+    "part": "c(i)",
+    "marks": 2,
+    "page": 19,
+    "title": "Magnitude of a parametrised circle",
+    "tags": [
+      "Vectors",
+      "Proof"
+    ],
+    "steps": [
+      "Expand the squared norm using the dot product: \\(|\\mathbf v|^2=\\cos^2\\theta|\\mathbf a|^2+\\sin^2\\theta|\\mathbf b|^2+2\\sin\\theta\\cos\\theta(\\mathbf a\\cdot\\mathbf b)\\).",
+      "A and B lie on the unit sphere, so their position vectors have length 1; they are perpendicular, so the cross term vanishes."
+    ],
+    "answer": "\\(|\\mathbf v(\\theta)|^2=\\cos^2\\theta+\\sin^2\\theta=1\\)."
+  },
+  {
+    "number": 16,
+    "part": "c(ii)",
+    "marks": 2,
+    "page": 19,
+    "title": "Intersection of two great circles",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "Every point of \\(C_1\\) satisfies \\(y=2x\\), while every point of \\(C_2\\) satisfies \\(z=y\\). Thus an intersection has coordinates \\((x,2x,2x)\\).",
+      "Both circles lie on the unit sphere, so \\(x^2+4x^2+4x^2=1\\), giving \\(x=\\pm1/3\\). Each of these unit vectors lies in both circle planes."
+    ],
+    "answer": "\\(\\left(\\frac13,\\frac23,\\frac23\\right)\\) and \\(\\left(-\\frac13,-\\frac23,-\\frac23\\right)\\)."
+  },
+  {
+    "number": 16,
+    "part": "c(iii)",
+    "marks": 4,
+    "page": 19,
+    "title": "Constructing an orthonormal circle basis",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "Take \\(\\mathbf a=(0,1,0)\\). The projection of \\(\\overrightarrow{OP}\\) onto this unit vector is \\((0,1/\\sqrt6,0)\\). Subtract it to obtain \\(\\mathbf r=(\\sqrt3/2,0,-1/(2\\sqrt3))\\).",
+      "This remainder has length \\(\\sqrt{5/6}\\). Normalising gives \\(\\mathbf b=(3/\\sqrt{10},0,-1/\\sqrt{10})\\), perpendicular to \\(\\mathbf a\\).",
+      "The vectors span the plane through O, A and P. Both are unit vectors, so the supplied circle formula applies; P occurs when \\(\\cos\\theta=1/\\sqrt6\\) and \\(\\sin\\theta=\\sqrt{5/6}\\)."
+    ],
+    "answer": "\\(\\mathbf v(\\theta)=\\cos\\theta\\,(0,1,0)+\\frac{\\sin\\theta}{\\sqrt{10}}(3,0,-1),\\quad0\\le\\theta<2\\pi\\)."
+  }
+]

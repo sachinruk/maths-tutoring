@@ -1,5 +1,6 @@
-"""Build the 2025 Advanced practice page from original solution content."""
+"""Build configured HSC past-paper practice pages from original solutions."""
 
+import argparse
 import html
 import json
 import math
@@ -9,9 +10,44 @@ from collections.abc import Callable
 from typing import NotRequired, TypedDict
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SLUG = "/practice/2025-maths-advanced/"
-PAPER = "https://www.nsw.gov.au/sites/default/files/noindex/2025-10/2025-hsc-maths-advanced.pdf"
-PACK = "https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-advanced/2025"
+
+
+class PaperConfig(TypedDict):
+    year: int
+    course: str
+    slug: str
+    pdf: str
+    pack: str
+    total_marks: int
+    multiple_choice_through: int
+
+
+PAPERS: dict[str, PaperConfig] = {
+    "2025-maths-advanced": {
+        "year": 2025, "course": "Mathematics Advanced", "slug": "/practice/2025-maths-advanced/",
+        "pdf": "https://www.nsw.gov.au/sites/default/files/noindex/2025-10/2025-hsc-maths-advanced.pdf",
+        "pack": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-advanced/2025",
+        "total_marks": 100, "multiple_choice_through": 10,
+    },
+    "2025-maths-extension-1": {
+        "year": 2025, "course": "Mathematics Extension 1", "slug": "/practice/2025-maths-extension-1/",
+        "pdf": "https://www.nsw.gov.au/sites/default/files/noindex/2025-10/2025-hsc-maths-extension-1.pdf",
+        "pack": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-extension-1/2025",
+        "total_marks": 70, "multiple_choice_through": 10,
+    },
+    "2026-maths-advanced": {
+        "year": 2026, "course": "Mathematics Advanced", "slug": "/practice/2026-maths-advanced/",
+        "pdf": "https://www.nsw.gov.au/sites/default/files/noindex/2026-10/2026-hsc-maths-advanced.pdf",
+        "pack": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-advanced/2026",
+        "total_marks": 100, "multiple_choice_through": 10,
+    },
+    "2026-maths-extension-2": {
+        "year": 2026, "course": "Mathematics Extension 2", "slug": "/practice/2026-maths-extension-2/",
+        "pdf": "https://www.nsw.gov.au/sites/default/files/noindex/2026-10/2026-hsc-maths-extension-2.pdf",
+        "pack": "https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-extension-2/2026",
+        "total_marks": 100, "multiple_choice_through": 10,
+    },
+}
 
 
 class Part(TypedDict):
@@ -43,10 +79,11 @@ def _part_id(*, part: Part) -> str:
     return f'q{part["number"]}{part["part"]}'
 
 
-def _card(*, part: Part, rendered: dict[str, str]) -> str:
+def _card(*, part: Part, rendered: dict[str, str], paper: PaperConfig) -> str:
     key = _part_id(part=part)
-    label = f'Question {part["number"]}' + (f'({part["part"]})' if part["part"] else "")
-    section = "I" if part["number"] <= 10 else "II"
+    part_label = part["part"].replace("(", ")(").rstrip(")")
+    label = f'Question {part["number"]}' + (f'({part_label})' if part_label else "")
+    section = "I" if part["number"] <= paper["multiple_choice_through"] else "II"
     tags = "".join(f'<span class="topic-label">{_escape(text=tag)}</span>' for tag in part["tags"])
     steps = "".join(f'<li>{rendered[step]}</li>' for step in part["steps"])
     figure = ""
@@ -56,7 +93,7 @@ def _card(*, part: Part, rendered: dict[str, str]) -> str:
       <div class="question-heading">
         <div><p class="question-number"><a href="#{key}">{label}</a><span>{part["marks"]} {"mark" if part["marks"] == 1 else "marks"}</span></p>
           <h3>{_escape(text=part["title"])}</h3></div>
-        <a class="paper-link" href="{PAPER}#page={part["page"]}" target="_blank" rel="noopener">Read question <span aria-hidden="true">↗</span><span class="sr-only"> in NESA PDF, new tab</span></a>
+        <a class="paper-link" href="{paper["pdf"]}#page={part["page"]}" target="_blank" rel="noopener">Read question <span aria-hidden="true">↗</span><span class="sr-only"> in NESA PDF, new tab</span></a>
       </div>
       <div class="question-tags" aria-label="Topics">{tags}</div>
       <details class="solution" id="solution-{key}">
@@ -72,26 +109,36 @@ def _card(*, part: Part, rendered: dict[str, str]) -> str:
     </article>'''
 
 
-def _page(*, parts: list[Part], rendered: dict[str, str]) -> str:
+def _page(*, parts: list[Part], rendered: dict[str, str], paper: PaperConfig) -> str:
+    year = paper["year"]
+    course = paper["course"]
+    slug = paper["slug"]
+    pdf = paper["pdf"]
+    pack = paper["pack"]
+    question_count = len({part["number"] for part in parts})
+    part_count = len(parts)
+    total_marks = paper["total_marks"]
+    course_path = {"Mathematics Advanced": "/maths-advanced-tutor/", "Mathematics Extension 1": "/extension-1-maths-tutor/", "Mathematics Extension 2": "/extension-2-maths-tutor/"}[paper["course"]]
+    course_label = paper["course"].replace("Mathematics ", "")
     tags = sorted({tag for part in parts for tag in part["tags"]})
     filters = "".join(f'<button type="button" class="tag-filter" data-tag="{_escape(text=tag)}" aria-pressed="false">{_escape(text=tag)}</button>' for tag in tags)
     sections = []
     for section, name in [("I", "Multiple choice"), ("II", "Written responses")]:
-        matching = [part for part in parts if (part["number"] <= 10) == (section == "I")]
-        cards = "\n".join(_card(part=part, rendered=rendered) for part in matching)
+        matching = [part for part in parts if (part["number"] <= paper["multiple_choice_through"]) == (section == "I")]
+        cards = "\n".join(_card(part=part, rendered=rendered, paper=paper) for part in matching)
         sections.append(f'<section class="question-section" data-section="{section}" aria-labelledby="section-{section}"><h2 id="section-{section}">Section {section} <span>{name}</span></h2>{cards}</section>')
     return f'''<!doctype html>
 <html lang="en-AU">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2025 HSC Maths Advanced Worked Solutions | HSC Maths Tutor</title>
-  <meta name="description" content="Original worked solutions for every question in the 2025 HSC Mathematics Advanced exam. Filter by topic, reveal each solution and time your review.">
-  <link rel="canonical" href="https://hscmathstutor.com.au{SLUG}">
-  <meta property="og:title" content="2025 HSC Maths Advanced worked solutions">
-  <meta property="og:description" content="31 questions. 50 parts. Clear working, topic filters and a timer for every solution.">
+  <title>{year} HSC {course.removeprefix("Mathematics ")} Worked Solutions | HSC Maths Tutor</title>
+  <meta name="description" content="Original worked solutions for every question in the {year} HSC {course} exam. Filter by topic, reveal each solution and time your review.">
+  <link rel="canonical" href="https://hscmathstutor.com.au{slug}">
+  <meta property="og:title" content="{year} HSC {course.removeprefix("Mathematics ")} worked solutions">
+  <meta property="og:description" content="{question_count} questions. {part_count} parts. Clear working, topic filters and a timer for every solution.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hscmathstutor.com.au{SLUG}">
+  <meta property="og:url" content="https://hscmathstutor.com.au{slug}">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,15 +152,15 @@ def _page(*, parts: list[Part], rendered: dict[str, str]) -> str:
   <a class="skip-link" href="#questions">Skip to solutions</a>
   <header class="site-header"><div class="container nav">
     <a href="/" class="brand">Sachin Abeywardana <span>HSC Maths Tutoring</span></a>
-    <nav aria-label="Main"><a href="/maths-advanced-tutor/">Advanced</a><a href="{SLUG}" aria-current="page">Past paper solutions</a><a href="/#contact" class="btn btn-small">Free trial lesson</a></nav>
+    <nav aria-label="Main"><a href="{course_path}">{course_label}</a><a href="/practice/" aria-current="page">Past paper solutions</a><a href="/#contact" class="btn btn-small">Free trial lesson</a></nav>
   </div></header>
   <main>
     <section class="practice-hero"><div class="container practice-width">
-      <p class="eyebrow">Past paper practice · Mathematics Advanced</p>
-      <h1>2025 HSC<br>worked solutions</h1>
+      <p class="eyebrow">Past paper practice · {course}</p>
+      <h1>{year} HSC<br>worked solutions</h1>
       <p class="lead">A clear method for every question. Find a topic, try it on paper, then open the working when you’re ready.</p>
-      <div class="paper-stats"><span><strong>31</strong> questions</span><span><strong>50</strong> parts</span><span><strong>100</strong> marks</span></div>
-      <div class="cta-row"><a class="btn" href="{PAPER}" target="_blank" rel="noopener">Open official exam paper <span aria-hidden="true">↗</span><span class="sr-only"> (PDF, new tab)</span></a><a class="text-link" href="{PACK}" target="_blank" rel="noopener">NESA exam pack <span class="sr-only">(new tab)</span></a></div>
+      <div class="paper-stats"><span><strong>{question_count}</strong> questions</span><span><strong>{part_count}</strong> parts</span><span><strong>{total_marks}</strong> marks</span></div>
+      <div class="cta-row"><a class="btn" href="{pdf}" target="_blank" rel="noopener">Open official exam paper <span aria-hidden="true">↗</span><span class="sr-only"> (PDF, new tab)</span></a><a class="text-link" href="{pack}" target="_blank" rel="noopener">NESA exam pack <span class="sr-only">(new tab)</span></a></div>
       <p class="source-note">Use these independently written solutions alongside the official NESA questions. This is an unofficial study resource, not endorsed by NESA.</p>
     </div></section>
     <div class="container practice-width practice-content">
@@ -123,7 +170,7 @@ def _page(*, parts: list[Part], rendered: dict[str, str]) -> str:
         <div class="filter-heading"><h2>Choose your topics</h2><button type="button" id="clear-filters">Clear filters</button></div>
         <p id="tag-help">Select one or more topics. Questions matching any selected topic will appear.</p>
         <div class="tag-filters" role="group" aria-label="Topics" aria-describedby="tag-help">{filters}</div>
-        <div class="filter-bottom"><label for="section-filter">Exam section</label><select id="section-filter"><option value="all">All questions</option><option value="I">Section I · Multiple choice</option><option value="II">Section II · Written responses</option></select><p id="result-count" role="status" aria-live="polite" aria-atomic="true">Showing all 50 question parts</p></div>
+        <div class="filter-bottom"><label for="section-filter">Exam section</label><select id="section-filter"><option value="all">All questions</option><option value="I">Section I · Multiple choice</option><option value="II">Section II · Written responses</option></select><p id="result-count" role="status" aria-live="polite" aria-atomic="true">Showing all {part_count} question parts</p></div>
       </form>
       <noscript><p class="how-to">All solutions are available below. Enable JavaScript for topic filters and timers.</p></noscript>
       <div id="questions" tabindex="-1">{"".join(sections)}</div>
@@ -131,7 +178,7 @@ def _page(*, parts: list[Part], rendered: dict[str, str]) -> str:
       <aside class="study-footer"><h2>Want to work through it together?</h2><p>Bring the questions you’re finding tricky to a lesson.</p><a class="btn" href="/#contact">Book a free trial lesson</a></aside>
     </div>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><p>&copy; <span id="year">2026</span> Sachin Abeywardana</p><p><a href="/">HSC Maths Tutoring</a></p><p><a href="{PACK}" target="_blank" rel="noopener">Official source: NESA 2025 exam pack</a></p></div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><p>&copy; <span id="year">2026</span> Sachin Abeywardana</p><p><a href="/">HSC Maths Tutoring</a></p><p><a href="{pack}" target="_blank" rel="noopener">Official source: NESA {year} exam pack</a></p></div></footer>
   <script src="/site.js?v=8"></script>
 </body>
 </html>
@@ -193,16 +240,42 @@ def _write_charts() -> None:
     _chart(name="arc-intersection.svg", title="Solution sketch: finding the intersection", description="The line y equals theta intersects y equals sin theta plus pi over 2 near theta equals 2.31 radians.", xmin=0, xmax=3.2, ymin=0, ymax=3.3, xticks=[0, 1, 2, 2.31, 3], yticks=[0, 1, 2, 3], curves=[(_arc_curve, "#167a78", False), (_identity, "#13294b", True)], xlabel="θ", ylabel="y", legend="Solid teal: sin θ + π/2 · Dashed navy: θ (radians)")
 
 
-def main() -> None:
-    parts = json.loads(s=(ROOT / "content/2025-maths-advanced.json").read_text(encoding="utf-8"))
-    if len(parts) != 50 or sum(part["marks"] for part in parts) != 100:
-        raise ValueError("Expected all 50 question parts and all 100 marks")
+def _validate_parts(*, parts: list[Part], paper: PaperConfig) -> None:
+    if sum(part["marks"] for part in parts) != paper["total_marks"]:
+        raise ValueError(f'Expected all {paper["total_marks"]} marks for {paper["course"]} {paper["year"]}')
     if len({_part_id(part=part) for part in parts}) != len(parts):
         raise ValueError("Duplicate question part")
+    question_numbers = sorted({part["number"] for part in parts})
+    if not question_numbers or question_numbers != list(range(1, question_numbers[-1] + 1)):
+        raise ValueError("Question numbers must be continuous from question 1")
+    if any(part["marks"] <= 0 for part in parts):
+        raise ValueError("Every question part must have positive marks")
+
+
+def _build(*, paper_key: str) -> None:
+    paper = PAPERS[paper_key]
+    parts = json.loads(s=(ROOT / f"content/{paper_key}.json").read_text(encoding="utf-8"))
+    _validate_parts(parts=parts, paper=paper)
     rendered = _render_texts(parts=parts)
-    _write_charts()
-    (ROOT / SLUG.strip("/") / "index.html").write_text(data=_page(parts=parts, rendered=rendered), encoding="utf-8")
-    print(f"Built {SLUG}: {len(parts)} parts, 100 marks, original solution sketches")
+    if paper_key == "2025-maths-advanced":
+        _write_charts()
+    output_path = ROOT / paper["slug"].strip("/") / "index.html"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(data=_page(parts=parts, rendered=rendered, paper=paper), encoding="utf-8")
+    print(f'Built {paper["slug"]}: {len({part["number"] for part in parts})} questions, {len(parts)} parts, {paper["total_marks"]} marks')
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Build HSC past-paper practice pages")
+    parser.add_argument("--paper", choices=PAPERS, default="2025-maths-advanced", help="Paper content slug to build")
+    parser.add_argument("--all", action="store_true", help="Build every configured paper with an existing content JSON")
+    args = parser.parse_args()
+    if args.all:
+        paper_keys = [key for key in PAPERS if (ROOT / f"content/{key}.json").exists()]
+    else:
+        paper_keys = [args.paper]
+    for paper_key in paper_keys:
+        _build(paper_key=paper_key)
 
 
 if __name__ == "__main__":

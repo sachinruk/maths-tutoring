@@ -161,15 +161,13 @@ def _page(*, course: Course) -> str:
     intro = "\n".join(f"        <p>{html.escape(p)}</p>" for p in course["intro"])
     topics = "\n".join(f"              <li>{html.escape(t)}</li>" for t in course["topics"])
     videos = "\n".join(_video_card(video=v) for v in course["videos"])
-    practice = ""
-    if course["slug"] == "maths-advanced-tutor":
-        practice = """
+    practice = f"""
     <section class="section">
       <div class="container narrow">
         <p class="eyebrow">Free past paper practice</p>
-        <h2>2025 HSC Maths Advanced solutions</h2>
-        <p>Short explanations and worked solutions for every question. Filter by topic, reveal each solution and time your review.</p>
-        <a class="btn" href="/practice/2025-maths-advanced/">Explore the worked solutions &rarr;</a>
+        <h2>{html.escape(course["name"])} worked solutions</h2>
+        <p>Original explanations for every question, topic filters and solution timers with a total study time counter.</p>
+        <a class="btn" href="/practice/">Explore past paper solutions &rarr;</a>
       </div>
     </section>
 """
@@ -311,7 +309,8 @@ def _write_page(*, course: Course) -> Path:
 
 def _write_sitemap() -> None:
     urls = [f"{SITE}/"] + [f'{SITE}/{c["slug"]}/' for c in COURSES]
-    urls.append(f"{SITE}/practice/2025-maths-advanced/")
+    urls.append(f"{SITE}/practice/")
+    urls.extend(f"{SITE}/practice/{path.stem}/" for path in sorted((ROOT / "content").glob("*.json")))
     entries = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{entries}\n</urlset>\n'

@@ -1,0 +1,778 @@
+[
+  {
+    "number": 1,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Roots and end behaviour",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The zeros are \\(-4,1,3\\), so the factors are \\((x+4)(x-1)(x-3)\\). The right-hand end rises, requiring a positive leading coefficient."
+    ],
+    "answer": "C: \\((x-1)(x-3)(x+4)\\)."
+  },
+  {
+    "number": 2,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Mode of a continuous distribution",
+    "tags": [
+      "Probability"
+    ],
+    "steps": [
+      "The mode is the horizontal coordinate where the density is greatest. The highest point occurs at \\(x=2\\sqrt2\\), rather than at the height \\(\\sqrt2/2\\)."
+    ],
+    "answer": "D: \\(2\\sqrt2\\)."
+  },
+  {
+    "number": 3,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Horizontal stretch and reflection",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The domain doubles from \\([0,4]\\) to \\([0,8]\\), giving \\(f(x/2)\\). The heights change sign, so reflect in the horizontal axis."
+    ],
+    "answer": "B: \\(g(x)=-f(x/2)\\)."
+  },
+  {
+    "number": 4,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Interpreting correlation",
+    "tags": [
+      "Statistics"
+    ],
+    "steps": [
+      "A positive correlation describes a tendency for both variables to increase together. It does not establish causation or mean that 62% of students follow a particular pattern."
+    ],
+    "answer": "D: students who study more tend to score higher."
+  },
+  {
+    "number": 5,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Rise above the launch point",
+    "tags": [
+      "Motion",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The starting height is \\(h(0)=45\\). At the maximum, \\(h(3)=45+36-18=63\\), so the rise is \\(63-45\\)."
+    ],
+    "answer": "A: \\(18\\text{ m}\\)."
+  },
+  {
+    "number": 6,
+    "part": "",
+    "marks": 1,
+    "page": 6,
+    "title": "The ambiguous sine-rule case",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "The sine rule gives the whole obtuse angle at G as \\(180^\\circ-68.3^\\circ=111.7^\\circ\\). The dashed perpendicular already accounts for \\(55^\\circ\\), leaving \\(111.7^\\circ-55^\\circ=56.7^\\circ\\) on the right."
+    ],
+    "answer": "A."
+  },
+  {
+    "number": 7,
+    "part": "",
+    "marks": 1,
+    "page": 7,
+    "title": "Sum of two independent rolls",
+    "tags": [
+      "Probability"
+    ],
+    "steps": [
+      "The ordered pairs giving a sum of \\(-3\\) are \\((-4,1),(1,-4),(-3,0),(0,-3)\\). Multiply within each independent pair, then add.",
+      "\\[P=2\\left(\\frac3{18}\\frac1{18}+\\frac4{18}\\frac3{18}\\right)=\\frac{30}{324}=\\frac5{54}.\\]"
+    ],
+    "answer": "B: \\(5/54\\)."
+  },
+  {
+    "number": 8,
+    "part": "",
+    "marks": 1,
+    "page": 8,
+    "title": "Odd functions and signed areas",
+    "tags": [
+      "Integration",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Let \\(A\\) be the positive area from 0 to 1 and \\(B\\) the magnitude of the smaller negative area from 1 to a. Then \\(A>B>0\\). Odd symmetry gives \\(P=A-B\\), \\(Q=0\\), \\(S=-P\\), and \\(R=-P+A=B\\).",
+      "The diagram also shows \\(A>2B\\), so \\(R<P\\). Thus \\(S<Q<R<P\\)."
+    ],
+    "answer": "C: \\(S,Q,R,P\\)."
+  },
+  {
+    "number": 9,
+    "part": "",
+    "marks": 1,
+    "page": 9,
+    "title": "Combining normal tails",
+    "tags": [
+      "Normal distribution",
+      "Probability"
+    ],
+    "steps": [
+      "By symmetry, \\(P(Z>1.2)=P(Z<-1.2)\\). Split the latter at \\(-1.5\\), then add the left tail.",
+      "\\[P(Z<-1.5)+P(Z>1.2)=2P(Z<-1.5)+P(-1.5<Z<-1.2).\\]"
+    ],
+    "answer": "A."
+  },
+  {
+    "number": 10,
+    "part": "",
+    "marks": 1,
+    "page": 9,
+    "title": "Range of a composite function",
+    "tags": [
+      "Functions & graphs",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Put \\(u=\\sin x\\), so \\(-1\\le u\\le1\\). Complete the square: \\(u^2-u=(u-1/2)^2-1/4\\). The minimum is \\(-1/4\\) at \\(u=1/2\\); the maximum is 2 at \\(u=-1\\)."
+    ],
+    "answer": "D: \\(-\\tfrac14\\le k\\le2\\)."
+  },
+  {
+    "number": 11,
+    "part": "",
+    "marks": 2,
+    "page": 14,
+    "title": "Gradient of a tangent",
+    "tags": [
+      "Differentiation"
+    ],
+    "steps": [
+      "Differentiate to obtain \\(y\\prime=3x^2+3\\), then substitute \\(x=-1\\)."
+    ],
+    "answer": "\\(m=3(-1)^2+3=6\\)."
+  },
+  {
+    "number": 12,
+    "part": "a",
+    "marks": 2,
+    "page": 15,
+    "title": "Interquartile range",
+    "tags": [
+      "Statistics"
+    ],
+    "steps": [
+      "Exclude the middle (seventh) value, 22, when forming the lower and upper halves. Their medians are \\(Q_1=(15+17)/2=16\\) and \\(Q_3=(27+28)/2=27.5\\)."
+    ],
+    "answer": "\\(\\mathrm{IQR}=27.5-16=11.5\\)."
+  },
+  {
+    "number": 12,
+    "part": "b",
+    "marks": 2,
+    "page": 15,
+    "title": "Upper outlier fence",
+    "tags": [
+      "Statistics"
+    ],
+    "steps": [
+      "The upper fence is \\(Q_3+1.5\\,\\mathrm{IQR}=27.5+1.5(11.5)=44.75\\). The lower fence is \\(-1.25\\), below the smallest observation. Because m counts cars, it is an integer."
+    ],
+    "answer": "The greatest possible value is \\(m=44\\)."
+  },
+  {
+    "number": 13,
+    "part": "a",
+    "marks": 2,
+    "page": 16,
+    "title": "Finding an arithmetic sequence",
+    "tags": [
+      "Sequences & series"
+    ],
+    "steps": [
+      "With first term a and common difference d, \\(a+2d=30\\) and \\(a+5d=42\\). Subtracting gives \\(3d=12\\), so \\(d=4\\) and \\(a=30-8\\)."
+    ],
+    "answer": "22 seats."
+  },
+  {
+    "number": 13,
+    "part": "b",
+    "marks": 2,
+    "page": 16,
+    "title": "Summing the seats",
+    "tags": [
+      "Sequences & series"
+    ],
+    "steps": [
+      "Use \\(S_n=\\frac n2[2a+(n-1)d]\\) with \\(a=22,d=4,n=9\\)."
+    ],
+    "answer": "\\(S_9=\\tfrac92(44+32)=342\\) seats."
+  },
+  {
+    "number": 14,
+    "part": "",
+    "marks": 2,
+    "page": 17,
+    "title": "Range and period",
+    "tags": [
+      "Trigonometry",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Since \\(-1\\le\\cos(2x)\\le1\\), multiplying by 3 and adding 1 gives \\(-2\\le h(x)\\le4\\). The angular multiplier 2 halves the usual cosine period."
+    ],
+    "answer": "Range \\([-2,4]\\); period \\(\\pi\\)."
+  },
+  {
+    "number": 15,
+    "part": "",
+    "marks": 2,
+    "page": 17,
+    "title": "Differentiating an exponential composite",
+    "tags": [
+      "Differentiation",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "For \\(a^{u(x)}\\), the derivative is \\(a^{u(x)}\\ln(a)u\\prime(x)\\). Here \\(u=x^2+3\\), so \\(u\\prime=2x\\)."
+    ],
+    "answer": "\\(\\displaystyle\\frac{dy}{dx}=2x\\ln4\\;4^{x^2+3}\\)."
+  },
+  {
+    "number": 16,
+    "part": "a",
+    "marks": 1,
+    "page": 18,
+    "title": "Reading a scatterplot",
+    "tags": [
+      "Statistics"
+    ],
+    "steps": [
+      "Read the vertical coordinate of the lowest plotted point. It lies just above 6.0, at 6.1."
+    ],
+    "answer": "6.1."
+  },
+  {
+    "number": 16,
+    "part": "b",
+    "marks": 2,
+    "page": 18,
+    "title": "Interpreting a regression slope",
+    "tags": [
+      "Statistics"
+    ],
+    "steps": [
+      "The slope compares the predicted change in the public’s score with a one-unit increase in the critics’ score."
+    ],
+    "answer": "For each extra point in the critics’ score, the predicted public score increases by 0.54 points on average."
+  },
+  {
+    "number": 16,
+    "part": "c",
+    "marks": 1,
+    "page": 18,
+    "title": "Adding a point to a regression",
+    "tags": [
+      "Statistics"
+    ],
+    "steps": [
+      "The new point is below the fitted line and to the left of the data centre. It pulls the left end of the fitted line downward, making the positive slope steeper."
+    ],
+    "answer": "The gradient increases."
+  },
+  {
+    "number": 17,
+    "part": "a",
+    "marks": 2,
+    "page": 19,
+    "title": "Fitting exponential decay",
+    "tags": [
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "At \\(t=0\\), \\(40=k a^0\\), so \\(k=40\\). At \\(t=1\\), \\(32=40a\\)."
+    ],
+    "answer": "\\(k=40,\\quad a=0.8\\)."
+  },
+  {
+    "number": 17,
+    "part": "b",
+    "marks": 1,
+    "page": 19,
+    "title": "Interpreting the decay factor",
+    "tags": [
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "A factor of 0.8 means that each year the maximum capacity is 80% of its value one year earlier."
+    ],
+    "answer": "The maximum storage capacity falls by 20% per year."
+  },
+  {
+    "number": 18,
+    "part": "a",
+    "marks": 2,
+    "page": 20,
+    "title": "Intersections of a line and parabola",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Equate the two formulas: \\(7-3x=-x^2+x+12\\). Rearranging gives \\(x^2-4x-5=(x-5)(x+1)=0\\)."
+    ],
+    "answer": "\\(x=-1\\) or \\(x=5\\)."
+  },
+  {
+    "number": 18,
+    "part": "b",
+    "marks": 2,
+    "page": 20,
+    "title": "Area between two curves",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "The parabola is above the line between the intersections, so integrate their difference.",
+      "\\[A=\\int_{-1}^{5}(-x^2+4x+5)\\,dx=\\left[-\\frac{x^3}{3}+2x^2+5x\\right]_{-1}^{5}=36.\\]"
+    ],
+    "answer": "36 square units."
+  },
+  {
+    "number": 19,
+    "part": "",
+    "marks": 3,
+    "page": 21,
+    "title": "Sketching a derivative",
+    "tags": [
+      "Differentiation",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The original curve decreases up to \\(x=2\\), so the derivative starts below the axis. It is zero at the local minimum and positive afterwards.",
+      "The slope is greatest at the inflection point \\(x=5\\), giving a local maximum of \\(f\\prime\\). The slope then decreases towards 0 from above as f approaches its horizontal asymptote. The vertical scale is not specified."
+    ],
+    "answer": "A curve crossing at \\(x=2\\), peaking above the axis at \\(x=5\\), then approaching \\(y=0\\) from above.",
+    "figure": "2026-advanced-derivative.svg"
+  },
+  {
+    "number": 20,
+    "part": "a",
+    "marks": 1,
+    "page": 22,
+    "title": "Multiplying along a probability tree",
+    "tags": [
+      "Probability"
+    ],
+    "steps": [
+      "Follow the walk branch and then the incorrect-uniform branch: \\(\\frac3{10}\\times\\frac1{10}\\)."
+    ],
+    "answer": "\\(3/100=0.03\\)."
+  },
+  {
+    "number": 20,
+    "part": "b",
+    "marks": 2,
+    "page": 22,
+    "title": "At least one success",
+    "tags": [
+      "Probability"
+    ],
+    "steps": [
+      "Using the independent-selection model intended by the tree, the probability a student does not meet both conditions is \\(1-0.03=0.97\\). Subtract the probability neither student does from 1."
+    ],
+    "answer": "\\(1-0.97^2=0.0591\\)."
+  },
+  {
+    "number": 21,
+    "part": "a",
+    "marks": 2,
+    "page": 23,
+    "title": "Quotient rule with a logarithm",
+    "tags": [
+      "Differentiation",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "Apply the quotient rule, keeping the entire denominator squared.",
+      "\\[g\\prime(x)=\\frac{(\\ln x)(1)-x(1/x)}{(\\ln x)^2}=\\frac{\\ln x-1}{(\\ln x)^2}.\\]"
+    ],
+    "answer": "\\(\\displaystyle g\\prime(x)=\\frac{\\ln x-1}{(\\ln x)^2}\\)."
+  },
+  {
+    "number": 21,
+    "part": "b",
+    "marks": 3,
+    "page": 23,
+    "title": "Checking endpoints for a global maximum",
+    "tags": [
+      "Differentiation"
+    ],
+    "steps": [
+      "The stationary point is \\(x=e\\). The derivative changes from negative to positive there, so it is a minimum.",
+      "Compare the endpoint values: \\(g(2)=2/\\ln2\\approx2.885\\), while \\(g(5)=5/\\ln5\\approx3.107\\)."
+    ],
+    "answer": "The global maximum is \\(5/\\ln5\\approx3.107\\), attained at \\(x=5\\)."
+  },
+  {
+    "number": 22,
+    "part": "a",
+    "marks": 1,
+    "page": 24,
+    "title": "Rewriting a rational function",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Split the numerator as \\(x+2=(x+1)+1\\), then divide each term by \\(x+1\\)."
+    ],
+    "answer": "\\(\\displaystyle\\frac{x+2}{x+1}=1+\\frac1{x+1}\\), for \\(x\\ne-1\\)."
+  },
+  {
+    "number": 22,
+    "part": "b",
+    "marks": 2,
+    "page": 24,
+    "title": "Translating a reciprocal graph",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Replacing x by \\(x+1\\) shifts \\(y=1/x\\) left by one unit. Adding 1 shifts it up by one unit."
+    ],
+    "answer": "Translate one unit left and one unit up."
+  },
+  {
+    "number": 23,
+    "part": "",
+    "marks": 4,
+    "page": 25,
+    "title": "Bearings, area and the cosine rule",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "Write \\(OA=OB=r\\). The area formula gives \\(80=\\tfrac12 r^2\\sin45^\\circ\\), so \\(r=\\sqrt{160/\\sin45^\\circ}\\approx15.0424\\text{ km}\\).",
+      "The included angle \\(BOC=253^\\circ-101^\\circ=152^\\circ\\). Apply the cosine rule: \\(BC=\\sqrt{r^2+25^2-2r(25)\\cos152^\\circ}\\approx38.93\\text{ km}\\)."
+    ],
+    "answer": "\\(BC\\approx39\\text{ km}\\), to the nearest kilometre."
+  },
+  {
+    "number": 24,
+    "part": "a",
+    "marks": 2,
+    "page": 26,
+    "title": "Finding a continuous decay constant",
+    "tags": [
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "If 75% has decayed, 25% remains: \\(250=1000e^{10.54k}\\). Taking logarithms gives \\(k=\\ln(0.25)/10.54\\)."
+    ],
+    "answer": "\\(k\\approx-0.1315\\text{ year}^{-1}\\)."
+  },
+  {
+    "number": 24,
+    "part": "b",
+    "marks": 2,
+    "page": 26,
+    "title": "Time from a decay rate",
+    "tags": [
+      "Differentiation",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "Differentiate to get \\(A\\prime(t)=1000k e^{kt}\\). Set this to \\(-9.48\\) and use the unrounded value \\(k=\\ln(0.25)/10.54\\).",
+      "\\[t=\\frac{\\ln\\!\\left(\\frac{-9.48}{1000k}\\right)}{k}\\approx19.996.\\]"
+    ],
+    "answer": "20 years, to the nearest year."
+  },
+  {
+    "number": 25,
+    "part": "",
+    "marks": 2,
+    "page": 27,
+    "title": "Normal symmetry about the mean",
+    "tags": [
+      "Normal distribution",
+      "Probability"
+    ],
+    "steps": [
+      "The upper boundary is \\(5.89-4.82=1.07\\) kg above the mean, exactly matching the distance \\(4.82-3.75=1.07\\) kg below it. Symmetry makes the upper tail probability 0.116.",
+      "The area from the mean to the upper boundary is therefore \\(0.5-0.116\\)."
+    ],
+    "answer": "\\(0.384\\)."
+  },
+  {
+    "number": 26,
+    "part": "a",
+    "marks": 1,
+    "page": 28,
+    "title": "Direction changes from velocity",
+    "tags": [
+      "Motion"
+    ],
+    "steps": [
+      "Solve \\(1-e^{\\cos(\\pi t)}=0\\), giving \\(\\cos(\\pi t)=0\\). Only \\(t=0.5\\) lies in the given interval; velocity changes from negative to positive there."
+    ],
+    "answer": "\\(t=0.5\\text{ s}\\)."
+  },
+  {
+    "number": 26,
+    "part": "b",
+    "marks": 2,
+    "page": 28,
+    "title": "Acceleration using the chain rule",
+    "tags": [
+      "Motion",
+      "Differentiation"
+    ],
+    "steps": [
+      "Differentiating velocity gives \\(a(t)=\\pi e^{\\cos(\\pi t)}\\sin(\\pi t)\\). At \\(t=0.5\\), the exponential factor and sine factor are both 1."
+    ],
+    "answer": "\\(a(0.5)=\\pi\\text{ m/s}^2\\)."
+  },
+  {
+    "number": 26,
+    "part": "c",
+    "marks": 2,
+    "page": 29,
+    "title": "Trapezoidal estimate of distance",
+    "tags": [
+      "Motion",
+      "Integration"
+    ],
+    "steps": [
+      "Distance integrates speed, so use the absolute values of the velocities. The sign change is at a table point, allowing the trapezoidal rule to be applied across both pieces.",
+      "\\[D\\approx\\frac{0.25}{2}[1.72+2(1.03+0+0.51)+0.63]=0.67875.\\]"
+    ],
+    "answer": "Approximately \\(0.679\\text{ m}\\)."
+  },
+  {
+    "number": 27,
+    "part": "",
+    "marks": 4,
+    "page": 30,
+    "title": "Changing annuity contributions",
+    "tags": [
+      "Financial mathematics",
+      "Sequences & series"
+    ],
+    "steps": [
+      "The half-yearly rate is \\(i=0.01\\), and there are 10 end-of-period payments. Let \\(s_n=((1.01)^n-1)/0.01\\). Paying $750 throughout gives \\(750s_{10}\\). Doubling the last m payments adds a further \\(750s_m\\).",
+      "Thus \\(750(10.4622+s_m)\\ge14000\\), or \\(s_m\\ge8.20447\\). The table gives \\(s_8=8.2857\\), so eight doubled payments suffice.",
+      "Seven doubled payments give \\(s_7\\approx7.2135\\), which is too small. Therefore at least eight of the ten payments must be $1500."
+    ],
+    "answer": "A maximum of 2 contributions of $750."
+  },
+  {
+    "number": 28,
+    "part": "",
+    "marks": 4,
+    "page": 31,
+    "title": "Three distinct cubic roots",
+    "tags": [
+      "Differentiation",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Differentiate: \\(y\\prime=12x^2-6x-6=6(2x+1)(x-1)\\). The stationary points occur at \\(x=-1/2\\) and \\(x=1\\).",
+      "The derivative signs \\(+,-,+\\) show a local maximum at \\(-1/2\\) with height \\(d+7/4\\), and a local minimum at 1 with height \\(d-5\\).",
+      "For three distinct crossings, the maximum must be strictly positive and the minimum strictly negative: \\(d+7/4>0\\) and \\(d-5<0\\). Equality would give a repeated root and only two intercepts."
+    ],
+    "answer": "\\(-\\tfrac74<d<5\\)."
+  },
+  {
+    "number": 29,
+    "part": "a",
+    "marks": 2,
+    "page": 32,
+    "title": "Sketching the cotangent graph",
+    "tags": [
+      "Trigonometry",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Use \\(\\cot x=\\cos x/\\sin x\\). It has vertical asymptotes at \\(x=0,\\pi,2\\pi\\) and zeros at \\(x=\\pi/2,3\\pi/2\\).",
+      "Each branch decreases from \\(+\\infty\\) to \\(-\\infty\\) between successive asymptotes. Neither endpoint is in the domain."
+    ],
+    "answer": "Two decreasing branches, with period \\(\\pi\\).",
+    "figure": "2026-advanced-cotangent.svg"
+  },
+  {
+    "number": 29,
+    "part": "b",
+    "marks": 2,
+    "page": 32,
+    "title": "Domain of a logarithmic composite",
+    "tags": [
+      "Trigonometry",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "The logarithm needs \\(\\cot x>0\\). Sine and cosine have the same sign in the first and third quadrants. Exclude both zeros of cotangent and its asymptotes."
+    ],
+    "answer": "\\(\\displaystyle x\\in(0,\\pi/2)\\cup(\\pi,3\\pi/2)\\)."
+  },
+  {
+    "number": 29,
+    "part": "c",
+    "marks": 2,
+    "page": 33,
+    "title": "Derivative of log cotangent",
+    "tags": [
+      "Differentiation",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Use the chain rule and \\((\\cot x)\\prime=-\\csc^2x\\).",
+      "\\[\\frac{d}{dx}\\ln(\\cot x)=\\frac{-\\csc^2x}{\\cot x}=-\\frac{1}{\\sin x\\cos x}=-\\csc x\\sec x.\\]"
+    ],
+    "answer": "\\(-\\csc x\\sec x\\), wherever \\(\\ln(\\cot x)\\) is defined."
+  },
+  {
+    "number": 30,
+    "part": "a",
+    "marks": 3,
+    "page": 34,
+    "title": "Pyramid volume in terms of an angle",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "In the right triangle AOM, the height is \\(MO=\\ell\\sin\\theta\\) and the half-diagonal of the square is \\(AO=\\ell\\cos\\theta\\).",
+      "The square’s full diagonal is \\(2\\ell\\cos\\theta\\), so its area is half the diagonal squared: \\(2\\ell^2\\cos^2\\theta\\). Multiply base area by height and divide by 3."
+    ],
+    "answer": "\\(\\displaystyle V=\\frac{2\\ell^3}{3}\\sin\\theta\\cos^2\\theta\\)."
+  },
+  {
+    "number": 30,
+    "part": "b",
+    "marks": 4,
+    "page": 35,
+    "title": "Optimising the pyramid volume",
+    "tags": [
+      "Differentiation",
+      "Trigonometry"
+    ],
+    "steps": [
+      "For fixed \\(\\ell>0\\), differentiate the angle-dependent factor: \\(V\\prime=\\frac{2\\ell^3}{3}\\cos\\theta(1-3\\sin^2\\theta)\\).",
+      "For a non-degenerate pyramid, \\(0<\\theta<\\pi/2\\), so the interior stationary point satisfies \\(\\sin\\theta=1/\\sqrt3\\). The derivative is positive before this angle and negative after it, giving the maximum."
+    ],
+    "answer": "\\(\\theta=\\arcsin(1/\\sqrt3)\\approx0.62\\text{ radians}\\)."
+  },
+  {
+    "number": 31,
+    "part": "a",
+    "marks": 1,
+    "page": 36,
+    "title": "Integrating a cosine",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "The derivative of \\(\\sin(2x)\\) is \\(2\\cos(2x)\\), so divide by 2."
+    ],
+    "answer": "\\(\\displaystyle\\int\\cos(2x)\\,dx=\\tfrac12\\sin(2x)+C\\)."
+  },
+  {
+    "number": 31,
+    "part": "b",
+    "marks": 3,
+    "page": 36,
+    "title": "Recovering a positive function",
+    "tags": [
+      "Integration",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "Since f is positive, \\(\\int f\\prime(x)/f(x)\\,dx=\\ln f(x)\\). Hence \\(\\ln f(x)=\\tfrac12\\sin(2x)+C\\).",
+      "Use \\(f(0)=1\\) to obtain \\(C=0\\), then exponentiate."
+    ],
+    "answer": "\\(f(x)=e^{\\frac12\\sin(2x)}\\)."
+  },
+  {
+    "number": 32,
+    "part": "a",
+    "marks": 1,
+    "page": 37,
+    "title": "Definite integral with a variable bound",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Apply the fundamental theorem using \\(F\\prime(t)=\\sqrt{\\tan t}\\). Evaluate F at the upper bound and subtract its value at the lower bound."
+    ],
+    "answer": "\\(g(x)=F(1)-F(x^3)\\)."
+  },
+  {
+    "number": 32,
+    "part": "b",
+    "marks": 2,
+    "page": 37,
+    "title": "Differentiating a variable lower bound",
+    "tags": [
+      "Differentiation",
+      "Integration"
+    ],
+    "steps": [
+      "The term \\(F(1)\\) is constant. Differentiate \\(-F(x^3)\\) by the chain rule, then substitute \\(F\\prime(x^3)=\\sqrt{\\tan(x^3)}\\)."
+    ],
+    "answer": "\\(g\\prime(x)=-3x^2\\sqrt{\\tan(x^3)}\\)."
+  },
+  {
+    "number": 33,
+    "part": "a",
+    "marks": 2,
+    "page": 38,
+    "title": "Loan balance after three repayments",
+    "tags": [
+      "Financial mathematics",
+      "Sequences & series"
+    ],
+    "steps": [
+      "Write \\(r=1.005\\) for monthly interest and \\(q=1.1\\) for payment growth. The first three balances are \\(A_1=83000r-760\\), \\(A_2=83000r^2-760r-760q\\), and \\(A_3=83000r^3-760r^2-760qr-760q^2\\)."
+    ],
+    "answer": "\\(A_3=83000(1.005)^3-760[(1.005)^2+(1.005)(1.1)+(1.1)^2]\\)."
+  },
+  {
+    "number": 33,
+    "part": "b",
+    "marks": 3,
+    "page": 38,
+    "title": "Summing increasing loan repayments",
+    "tags": [
+      "Financial mathematics",
+      "Sequences & series"
+    ],
+    "steps": [
+      "After n repayments, \\(A_n=83000r^n-760\\sum_{j=0}^{n-1}r^{n-1-j}q^j\\), where \\(r=1.005\\) and \\(q=1.1\\).",
+      "The geometric sum equals \\((q^n-r^n)/(q-r)\\). Since \\(760/(1.1-1.005)=8000\\), simplify to \\(83000r^n-8000(q^n-r^n)\\)."
+    ],
+    "answer": "\\(A_n=91000(1.005)^n-8000(1.1)^n\\)."
+  },
+  {
+    "number": 33,
+    "part": "c",
+    "marks": 3,
+    "page": 39,
+    "title": "The final loan repayment",
+    "tags": [
+      "Financial mathematics",
+      "Sequences & series"
+    ],
+    "steps": [
+      "The scheduled formula first reaches a non-positive balance when \\(n\\ge\\ln(91000/8000)/\\ln(1.1/1.005)\\approx26.919\\). Thus 26 full repayments are made and the final payment is in month 27.",
+      "The amount owing after repayment 26 is \\(A_{26}=91000(1.005)^{26}-8000(1.1)^{26}\\approx8254.41\\). Add one month’s interest rather than paying the full scheduled 27th instalment: \\(1.005A_{26}\\approx8295.68\\)."
+    ],
+    "answer": "The final payment is $8295.68."
+  }
+]

@@ -1,0 +1,532 @@
+[
+  {
+    "number": 1,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Solving an absolute-value inequality",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "An absolute value less than 5 means \\(-5<2x+3<5\\). Subtract 3 throughout, then divide by 2."
+    ],
+    "answer": "A: \\(-4<x<1\\)."
+  },
+  {
+    "number": 2,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Projecting one vector onto another",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "The scalar product is \\(\\mathbf u\\cdot\\mathbf v=1(2)+2(-3)=-4\\), while \\(|\\mathbf v|^2=2^2+(-3)^2=13\\). Multiply \\(\\mathbf v\\) by their ratio."
+    ],
+    "answer": "B: \\(-\\dfrac4{13}(2\\mathbf i-3\\mathbf j)\\)."
+  },
+  {
+    "number": 3,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Changing variables in an integral",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "With \\(x=5\\sin\\theta\\), we have \\(dx=5\\cos\\theta\\,d\\theta\\) and \\(25-x^2=25\\cos^2\\theta\\). The endpoints become \\(-\\pi/6\\) and \\(\\pi/6\\).",
+      "Thus \\(\\dfrac{dx}{25-x^2}=\\dfrac15\\sec\\theta\\,d\\theta\\); the cosine is positive throughout these limits."
+    ],
+    "answer": "B: \\(\\dfrac15\\displaystyle\\int_{-\\pi/6}^{\\pi/6}\\sec\\theta\\,d\\theta\\)."
+  },
+  {
+    "number": 4,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Bernoulli mean and variance",
+    "tags": [
+      "Probability",
+      "Binomial distribution"
+    ],
+    "steps": [
+      "The success probability is \\(p=P(X=1)=2/3\\). A Bernoulli variable has mean \\(p\\) and variance \\(p(1-p)\\)."
+    ],
+    "answer": "C: \\(E(X)=\\dfrac23,\\quad\\operatorname{Var}(X)=\\dfrac29\\)."
+  },
+  {
+    "number": 5,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Counting trigonometric solutions",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "Write \\(\\sin x=\\cos(\\pi/2-x)\\), then use the sum-to-product identity:",
+      "\\[\\cos5x+\\sin x=2\\cos(2x+\\pi/4)\\cos(3x-\\pi/4).\\]",
+      "The first factor gives \\(x=\\pi/8+k\\pi/2\\), with \\(k=0,1,2,3\\). The second gives \\(x=\\pi/4+k\\pi/3\\), with \\(k=0,1,\\ldots,5\\). None coincide, so there are \\(4+6\\) distinct solutions."
+    ],
+    "answer": "D: 10 solutions."
+  },
+  {
+    "number": 6,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Using odd symmetry in integration",
+    "tags": [
+      "Integration",
+      "Inverse trigonometry"
+    ],
+    "steps": [
+      "The function \\(\\tan^{-1}x\\) is odd and \\(x^2\\) is even, so their product is odd. An odd integrand has zero integral between opposite limits."
+    ],
+    "answer": "D: \\(\\displaystyle\\int_{-a}^{a}x^2\\tan^{-1}x\\,dx=0\\)."
+  },
+  {
+    "number": 7,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Reading a slope field",
+    "tags": [
+      "Differential equations"
+    ],
+    "steps": [
+      "The slopes depend on the horizontal position only. They are zero on the \\(y\\)-axis, positive on both sides, and steeper as \\(|x|\\) grows. These are the features of \\(x^2\\)."
+    ],
+    "answer": "A: \\(\\dfrac{dy}{dx}=x^2\\)."
+  },
+  {
+    "number": 8,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Ordering collinear points",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "Rearrange \\(\\mathbf c=3\\mathbf a-2\\mathbf b\\) to obtain \\(\\mathbf a=(2/3)\\mathbf b+(1/3)\\mathbf c\\). Both weights are positive and add to 1, so A is inside the segment BC."
+    ],
+    "answer": "A: A lies between B and C."
+  },
+  {
+    "number": 9,
+    "part": "",
+    "marks": 1,
+    "page": 6,
+    "title": "Finding the angle between vectors",
+    "tags": [
+      "Vectors",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Since \\(\\mathbf a+\\mathbf b=-\\mathbf c\\), squaring the magnitudes gives \\(49=9+25+2(3)(5)\\cos\\theta\\). Hence \\(\\cos\\theta=1/2\\)."
+    ],
+    "answer": "B: \\(\\theta=\\pi/3\\)."
+  },
+  {
+    "number": 10,
+    "part": "",
+    "marks": 1,
+    "page": 6,
+    "title": "Second derivative of an inverse",
+    "tags": [
+      "Differentiation",
+      "Inverse functions"
+    ],
+    "steps": [
+      "From \\(f(g(x))=x\\), differentiate twice: \\(f'(g)g'=1\\) and \\(f''(g)(g')^2+f'(g)g''=0\\).",
+      "At \\(x=1\\), \\(g(1)=3\\) and \\(g'(1)=1/2\\). Therefore \\(4(1/2)^2+2g''(1)=0\\)."
+    ],
+    "answer": "C: \\(g''(1)=-\\dfrac12\\)."
+  },
+  {
+    "number": 11,
+    "part": "a",
+    "marks": 2,
+    "page": 7,
+    "title": "Finding a rational inverse",
+    "tags": [
+      "Inverse functions",
+      "Algebra"
+    ],
+    "steps": [
+      "Set \\(y=1-1/(x-2)\\). Then \\(1-y=1/(x-2)\\), so \\(x=2+1/(1-y)\\). Exchange the input and output."
+    ],
+    "answer": "\\(f^{-1}(x)=2-\\dfrac1{x-1},\\quad x\\ne1\\)."
+  },
+  {
+    "number": 11,
+    "part": "b",
+    "marks": 3,
+    "page": 7,
+    "title": "Factoring a trigonometric equation",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "Use \\(\\sin2\\theta=2\\sin\\theta\\cos\\theta\\) to obtain \\(\\sin\\theta(2\\cos\\theta-1)=0\\).",
+      "The sine factor gives the endpoints 0 and \\(\\pi\\); the other factor gives \\(\\cos\\theta=1/2\\), hence \\(\\theta=\\pi/3\\) in the required interval."
+    ],
+    "answer": "\\(\\theta=0,\\ \\pi/3,\\ \\pi\\)."
+  },
+  {
+    "number": 11,
+    "part": "c",
+    "marks": 2,
+    "page": 7,
+    "title": "Integrating a trigonometric product",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "The product-to-sum identity gives \\(\\sin3x\\cos x=\\tfrac12(\\sin4x+\\sin2x)\\). Integrate each sine term, including its chain-rule divisor."
+    ],
+    "answer": "\\(\\displaystyle-\\frac18\\cos4x-\\frac14\\cos2x+C\\)."
+  },
+  {
+    "number": 11,
+    "part": "d",
+    "marks": 2,
+    "page": 7,
+    "title": "Sketching a scaled inverse cosine",
+    "tags": [
+      "Functions & graphs",
+      "Inverse trigonometry"
+    ],
+    "steps": [
+      "The input of inverse cosine must satisfy \\(-1\\le2x\\le1\\), so the domain is \\([-1/2,1/2]\\). Scaling its output by \\(1/3\\) gives the range \\([0,\\pi/3]\\).",
+      "Draw a smooth decreasing curve through \\((-1/2,\\pi/3)\\), \\((0,\\pi/6)\\) and \\((1/2,0)\\). Include both endpoints; the tangents become vertical there."
+    ],
+    "answer": "Domain \\([-1/2,1/2]\\); range \\([0,\\pi/3]\\).",
+    "figure": "2025-ext1-arccos.svg"
+  },
+  {
+    "number": 11,
+    "part": "e",
+    "marks": 1,
+    "page": 7,
+    "title": "Making vectors parallel",
+    "tags": [
+      "Vectors"
+    ],
+    "steps": [
+      "The vector \\((2,6)\\) is twice \\((1,3)\\). The same scale factor must apply to both components."
+    ],
+    "answer": "\\(m=3\\)."
+  },
+  {
+    "number": 11,
+    "part": "f",
+    "marks": 2,
+    "page": 7,
+    "title": "Using sums and products of roots",
+    "tags": [
+      "Polynomials",
+      "Algebra"
+    ],
+    "steps": [
+      "Put the fractions over a common denominator: \\(1/(\\alpha\\beta)+1/(\\alpha\\gamma)+1/(\\beta\\gamma)=(\\alpha+\\beta+\\gamma)/(\\alpha\\beta\\gamma)\\).",
+      "Vieta’s formulas give the sum \\(-6/2=-3\\) and product \\(-(-1)/2=1/2\\)."
+    ],
+    "answer": "\\(-6\\)."
+  },
+  {
+    "number": 11,
+    "part": "g",
+    "marks": 3,
+    "page": 7,
+    "title": "Integrating a squared cosine",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Reduce the power using \\(\\cos^2(3x)=(1+\\cos6x)/2\\). An antiderivative is \\(x/2+\\sin6x/12\\).",
+      "The sine terms vanish at both \\(x=\\pi/6\\) and \\(x=\\pi/3\\). The remaining difference is \\(\\pi/6-\\pi/12\\)."
+    ],
+    "answer": "\\(\\pi/12\\)."
+  },
+  {
+    "number": 12,
+    "part": "a",
+    "marks": 3,
+    "page": 8,
+    "title": "Related rates in a sector",
+    "tags": [
+      "Rates of change",
+      "Differentiation"
+    ],
+    "steps": [
+      "The fixed area gives \\(\\tfrac12r^2\\theta=10\\). At \\(r=4\\), \\(\\theta=20/16=5/4\\).",
+      "Differentiate with respect to time: \\(r\\theta\\,dr/dt+\\tfrac12r^2\\,d\\theta/dt=0\\). Substituting \\(d\\theta/dt=2\\) gives \\(5\\,dr/dt+16=0\\)."
+    ],
+    "answer": "\\(\\dfrac{dr}{dt}=-3.2\\text{ cm s}^{-1}\\): the radius is decreasing."
+  },
+  {
+    "number": 12,
+    "part": "b",
+    "marks": 2,
+    "page": 8,
+    "title": "Volume of revolution about the y-axis",
+    "tags": [
+      "Integration",
+      "Volumes of revolution"
+    ],
+    "steps": [
+      "Express the radius of a horizontal disc in terms of its height: \\(x=1/y\\). Its area is \\(\\pi x^2=\\pi/y^2\\).",
+      "\\[V=\\pi\\int_1^a y^{-2}\\,dy=\\pi[-1/y]_1^a.\\]"
+    ],
+    "answer": "\\(V=\\pi(1-1/a)\\) cubic units."
+  },
+  {
+    "number": 12,
+    "part": "c",
+    "marks": 3,
+    "page": 8,
+    "title": "Induction with factorials",
+    "tags": [
+      "Mathematical induction"
+    ],
+    "steps": [
+      "Base case \\(n=1\\): the sum is 1 and \\(2!-1=1\\).",
+      "Assume \\(\\sum_{j=1}^{k}j(j!)=(k+1)!-1\\). Adding the next term gives",
+      "\\[\\sum_{j=1}^{k+1}j(j!)=(k+1)!-1+(k+1)(k+1)!=(k+2)!-1.\\]",
+      "This is precisely the required statement for \\(k+1\\). The base case and implication establish the identity for every positive integer."
+    ],
+    "answer": "\\(\\displaystyle\\sum_{j=1}^{n}j(j!)=(n+1)!-1\\) for all integers \\(n\\ge1\\)."
+  },
+  {
+    "number": 12,
+    "part": "d",
+    "marks": 3,
+    "page": 8,
+    "title": "Separating a differential equation",
+    "tags": [
+      "Differential equations",
+      "Inverse trigonometry"
+    ],
+    "steps": [
+      "Write \\(dy/\\sqrt{4-y^2}=dx\\). Integration gives \\(\\sin^{-1}(y/2)=x+C\\).",
+      "At \\((x,y)=(0,1)\\), \\(C=\\pi/6\\). Take sine to obtain the solution on the increasing branch through the initial point.",
+      "The sine expression solves the original equation on \\(-2\\pi/3\\le x\\le\\pi/3\\); on this interval its cosine factor is non-negative."
+    ],
+    "answer": "\\(y=2\\sin(x+\\pi/6)\\) on the branch through \\((0,1)\\)."
+  },
+  {
+    "number": 12,
+    "part": "e(i)",
+    "marks": 1,
+    "page": 8,
+    "title": "Writing a trigonometric expression as one sine",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "Expand \\(2\\sin(x-\\alpha)=2\\cos\\alpha\\sin x-2\\sin\\alpha\\cos x\\). Matching coefficients gives \\(\\cos\\alpha=\\sqrt3/2\\) and \\(\\sin\\alpha=1/2\\)."
+    ],
+    "answer": "\\(\\sqrt3\\sin x-\\cos x=2\\sin(x-\\pi/6)\\), so \\(\\alpha=\\pi/6\\)."
+  },
+  {
+    "number": 12,
+    "part": "e(ii)",
+    "marks": 2,
+    "page": 8,
+    "title": "Solving with a phase shift",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "Part (i) turns the equation into \\(2\\sin(x-\\pi/6)=1\\).",
+      "For \\(-\\pi/6\\le x-\\pi/6\\le11\\pi/6\\), sine equals \\(1/2\\) at \\(\\pi/6\\) and \\(5\\pi/6\\). Add \\(\\pi/6\\) to each."
+    ],
+    "answer": "\\(x=\\pi/3,\\ \\pi\\)."
+  },
+  {
+    "number": 13,
+    "part": "a",
+    "marks": 3,
+    "page": 9,
+    "title": "Choosing the correct solution branch",
+    "tags": [
+      "Differential equations"
+    ],
+    "steps": [
+      "Separate and integrate: \\(y\\,dy=5\\,dx\\), so \\(y^2/2=5x+C\\). The initial value gives \\(C=8\\), hence \\(y^2=10x+16\\).",
+      "The initial value is negative, so choose the negative square root. Exclude the endpoint where \\(y=0\\), because the original differential equation divides by \\(y\\)."
+    ],
+    "answer": "\\(y=-\\sqrt{10x+16},\\quad x>-8/5\\)."
+  },
+  {
+    "number": 13,
+    "part": "b",
+    "marks": 2,
+    "page": 9,
+    "title": "Circular arrangements with a restriction",
+    "tags": [
+      "Combinatorics"
+    ],
+    "steps": [
+      "Fix one guest to remove rotational duplicates. The unrestricted count is \\(7!\\).",
+      "For the forbidden arrangements, combine the two specified guests into one block. The resulting seven objects have \\(6!\\) circular arrangements, with 2 orders inside the block. Subtract these."
+    ],
+    "answer": "\\(7!-2(6!)=3600\\) arrangements."
+  },
+  {
+    "number": 13,
+    "part": "c",
+    "marks": 4,
+    "page": 9,
+    "title": "Angle between velocity and acceleration",
+    "tags": [
+      "Vectors",
+      "Motion",
+      "Differentiation"
+    ],
+    "steps": [
+      "Differentiate the position vector: \\(\\mathbf v=(1,2t/9)\\) and \\(\\mathbf a=(0,2/9)\\).",
+      "The dot-product formula gives \\(\\cos(\\pi/4)=2t/\\sqrt{81+4t^2}\\). The angle is acute, so \\(t>0\\).",
+      "Squaring yields \\(1/2=4t^2/(81+4t^2)\\), hence \\(4t^2=81\\). Keep the positive time."
+    ],
+    "answer": "\\(t=9/2=4.5\\) time units."
+  },
+  {
+    "number": 13,
+    "part": "d",
+    "marks": 4,
+    "page": 9,
+    "title": "Normal approximation to a binomial count",
+    "tags": [
+      "Binomial distribution",
+      "Normal distribution"
+    ],
+    "steps": [
+      "With replacement, \\(X\\sim\\operatorname{Bin}(100,p)\\). Since \\(100p=20\\), \\(p=0.2\\) and \\(\\sigma=\\sqrt{100(0.2)(0.8)}=4\\).",
+      "The lower-tail probability is \\(1-0.0668=0.9332\\). The supplied normal table gives \\(P(Z\\le1.5)=0.9332\\).",
+      "Using the standard normal approximation requested in the question, \\((k-20)/4=1.5\\)."
+    ],
+    "answer": "\\(k=26\\)."
+  },
+  {
+    "number": 13,
+    "part": "e(i)",
+    "marks": 1,
+    "page": 10,
+    "title": "Rearranging Pascal’s identity",
+    "tags": [
+      "Combinatorics",
+      "Binomial coefficients"
+    ],
+    "steps": [
+      "Use Pascal’s identity with \\(n=m+1\\) and \\(r=R+1\\): \\(\\binom{m+1}{R+1}=\\binom mR+\\binom m{R+1}\\). Move the last term to the other side."
+    ],
+    "answer": "\\(\\displaystyle\\binom mR=\\binom{m+1}{R+1}-\\binom m{R+1}\\)."
+  },
+  {
+    "number": 13,
+    "part": "e(ii)",
+    "marks": 2,
+    "page": 10,
+    "title": "Telescoping a sum of binomial coefficients",
+    "tags": [
+      "Combinatorics",
+      "Binomial coefficients"
+    ],
+    "steps": [
+      "Apply part (i) with \\(R=2000\\). Each term \\(\\binom m{2000}\\) becomes \\(\\binom{m+1}{2001}-\\binom m{2001}\\).",
+      "Summing for \\(m=2000,\\ldots,2050\\), all intermediate terms cancel, leaving \\(\\binom{2051}{2001}-\\binom{2000}{2001}\\). The last term is zero because 2001 objects cannot be chosen from 2000."
+    ],
+    "answer": "\\(\\displaystyle\\sum_{m=2000}^{2050}\\binom m{2000}=\\binom{2051}{2001}\\)."
+  },
+  {
+    "number": 14,
+    "part": "a",
+    "marks": 2,
+    "page": 11,
+    "title": "Divisibility of a product of factors",
+    "tags": [
+      "Proof",
+      "Number theory"
+    ],
+    "steps": [
+      "Among the positive factors of 60, only four are odd: 1, 3, 5 and 15. Any seven selected factors therefore include at least three even numbers, supplying more than the two factors of 2 needed.",
+      "Only six factors avoid a multiple of 3: 1, 2, 4, 5, 10 and 20. Likewise only six avoid a multiple of 5: 1, 2, 3, 4, 6 and 12. Seven selections must therefore supply both a factor of 3 and a factor of 5.",
+      "Thus the product is divisible by \\(2^2\\times3\\times5=60\\)."
+    ],
+    "answer": "The product of any seven distinct positive factors of 60 is a multiple of 60."
+  },
+  {
+    "number": 14,
+    "part": "b",
+    "marks": 4,
+    "page": 11,
+    "title": "Comparing horizontal projectiles",
+    "tags": [
+      "Projectile motion",
+      "Motion"
+    ],
+    "steps": [
+      "Let \\(OB=h\\), so \\(OA=kh\\). Both particles start with zero vertical speed. Their respective flight durations are \\(t_A=\\sqrt{2kh/g}\\) and \\(t_B=\\sqrt{2h/g}\\).",
+      "They have the same horizontal range, so \\(Ut_A=Vt_B\\). Dividing gives \\(V/U=t_A/t_B=\\sqrt{k}\\). The launch delay does not change either particle’s flight duration measured from its own launch."
+    ],
+    "answer": "\\(\\dfrac VU=\\sqrt{k}\\), which depends only on \\(k\\)."
+  },
+  {
+    "number": 14,
+    "part": "c",
+    "marks": 3,
+    "page": 11,
+    "title": "Perpendicular clock hands",
+    "tags": [
+      "Vectors",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Perpendicular vectors have zero dot product. Dividing that product by 2 and using \\(\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B\\) gives \\(\\cos(11\\pi t/360)=0\\).",
+      "The first two positive angles are \\(\\pi/2\\) and \\(3\\pi/2\\). Therefore the times are \\(180/11\\) and \\(540/11\\) minutes after midnight."
+    ],
+    "answer": "\\(t=16.364\\) minutes and \\(t=49.091\\) minutes."
+  },
+  {
+    "number": 14,
+    "part": "d",
+    "marks": 3,
+    "page": 12,
+    "title": "Differentiating an inverse-trigonometric composite",
+    "tags": [
+      "Differentiation",
+      "Inverse trigonometry"
+    ],
+    "steps": [
+      "The chain rule gives \\(f'(x)=-\\cos x/\\sqrt{1-\\sin^2x}=-\\cos x/|\\cos x|\\). The absolute value is essential.",
+      "Cosine is positive on \\((0,\\pi/2)\\) and negative on \\((\\pi/2,\\pi)\\). At \\(\\pi/2\\), the graph has a corner, so no derivative exists."
+    ],
+    "answer": "\\(f'(x)=\\begin{cases}-1,&0<x<\\pi/2,\\\\1,&\\pi/2<x<\\pi.\\end{cases}\\) Undefined at \\(x=\\pi/2\\)."
+  },
+  {
+    "number": 14,
+    "part": "e",
+    "marks": 3,
+    "page": 12,
+    "title": "Combining roots with a tangent-sum identity",
+    "tags": [
+      "Polynomials",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Let the roots be \\(p=\\tan\\alpha\\), \\(q=\\tan\\beta\\), \\(r=\\tan\\gamma\\). Vieta gives \\(p+q+r=-b\\), \\(pq+pr+qr=c\\), and \\(pqr=1-b-c\\).",
+      "The three-angle tangent identity now gives \\(\\tan(\\alpha+\\beta+\\gamma)=\\dfrac{p+q+r-pqr}{1-pq-pr-qr}=\\dfrac{-b-(1-b-c)}{1-c}=-1\\). The assumption \\(c\\ne1\\) allows this division.",
+      "The angle sums are \\(-\\pi/4+n\\pi\\). The first positive one occurs at \\(n=1\\)."
+    ],
+    "answer": "\\(\\alpha+\\beta+\\gamma=3\\pi/4\\) is the smallest positive value."
+  }
+]

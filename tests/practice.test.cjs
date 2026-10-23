@@ -204,3 +204,25 @@ test('a question deep link clears incompatible filters without starting time', (
   state.advance(3000);
   assert.equal(state.ids['total-time'].value, '00:00');
 });
+
+test('published papers include every marked section and link to their own official PDF', () => {
+  const papers = [
+    { slug: '2025-maths-extension-1', parts: 34, marks: 70, questions: 14, written: [15, 14, 16, 15], key: 'ABBCDDAABC' },
+    { slug: '2026-maths-advanced', parts: 52, marks: 100, questions: 33, written: [2, 4, 4, 2, 2, 4, 3, 4, 3, 3, 5, 3, 4, 4, 2, 5, 4, 4, 6, 7, 4, 3, 8], key: 'CDBDAABCAD' },
+    { slug: '2026-maths-extension-2', parts: 48, marks: 100, questions: 16, written: [15, 15, 14, 15, 15, 16], key: 'ABDDBCCBAC' },
+  ];
+  for (const paper of papers) {
+    const parts = JSON.parse(fs.readFileSync(path.join(root, `content/${paper.slug}.json`), 'utf8'));
+    const page = fs.readFileSync(path.join(root, `practice/${paper.slug}/index.html`), 'utf8');
+    assert.equal(parts.length, paper.parts, paper.slug);
+    assert.equal(parts.reduce((sum, part) => sum + part.marks, 0), paper.marks);
+    assert.equal(new Set(parts.map((part) => `q${part.number}${part.part}`)).size, parts.length);
+    assert.deepEqual([...new Set(parts.map((part) => part.number))], Array.from({ length: paper.questions }, (_, index) => index + 1));
+    assert.deepEqual(Array.from({ length: paper.questions - 10 }, (_, index) => parts.filter((part) => part.number === index + 11).reduce((sum, part) => sum + part.marks, 0)), paper.written);
+    assert.equal(parts.filter((part) => part.number <= 10).map((part) => part.answer[0]).join(''), paper.key);
+    assert.equal((page.match(/class="question-card"/g) ?? []).length, parts.length);
+    assert.ok(page.includes(`${paper.slug.replace('maths-', 'hsc-maths-')}.pdf#page=`));
+    assert.ok(page.includes('id="total-time"'));
+    assert.ok(parts.every((part) => part.steps.length > 0 && part.tags.length > 0 && part.page > 0 && part.answer));
+  }
+});
