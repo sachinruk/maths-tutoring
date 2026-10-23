@@ -161,6 +161,18 @@ def _page(*, course: Course) -> str:
     intro = "\n".join(f"        <p>{html.escape(p)}</p>" for p in course["intro"])
     topics = "\n".join(f"              <li>{html.escape(t)}</li>" for t in course["topics"])
     videos = "\n".join(_video_card(video=v) for v in course["videos"])
+    practice = ""
+    if course["slug"] == "maths-advanced-tutor":
+        practice = """
+    <section class="section">
+      <div class="container narrow">
+        <p class="eyebrow">Free past paper practice</p>
+        <h2>2025 HSC Maths Advanced solutions</h2>
+        <p>Short explanations and worked solutions for every question. Filter by topic, reveal each solution and time your review.</p>
+        <a class="btn" href="/practice/2025-maths-advanced/">Explore the worked solutions &rarr;</a>
+      </div>
+    </section>
+"""
     return f"""<!doctype html>
 <html lang="en-AU">
 <head>
@@ -231,7 +243,7 @@ def _page(*, course: Course) -> str:
       </div>
     </section>
 
-    <section class="section alt">
+{practice}    <section class="section alt">
       <div class="container narrow">
         <h2>Topics I cover</h2>
         <ul class="topic-list">
@@ -299,6 +311,7 @@ def _write_page(*, course: Course) -> Path:
 
 def _write_sitemap() -> None:
     urls = [f"{SITE}/"] + [f'{SITE}/{c["slug"]}/' for c in COURSES]
+    urls.append(f"{SITE}/practice/2025-maths-advanced/")
     entries = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{entries}\n</urlset>\n'

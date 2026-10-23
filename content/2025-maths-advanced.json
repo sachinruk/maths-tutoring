@@ -1,0 +1,790 @@
+[
+  {
+    "number": 1,
+    "part": "",
+    "marks": 1,
+    "page": 2,
+    "title": "Total probability",
+    "tags": [
+      "Probability"
+    ],
+    "steps": [
+      "A probability distribution must add to 1. The missing probability is \\(1-0.4-0.2=0.4\\)."
+    ],
+    "answer": "B: \\(0.4\\)."
+  },
+  {
+    "number": 2,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Exponential growth",
+    "tags": [
+      "Functions & graphs",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "A base greater than 1 gives an increasing exponential curve. It passes through \\((0,1)\\), stays positive and bends upwards. Only graph A has these features."
+    ],
+    "answer": "A."
+  },
+  {
+    "number": 3,
+    "part": "",
+    "marks": 1,
+    "page": 3,
+    "title": "Domain of a square root",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "A real square root requires a non-negative radicand: \\(6-x^2\\geq0\\). Thus \\(x^2\\leq6\\). Both endpoints are allowed because the square root of zero exists."
+    ],
+    "answer": "D: \\([-\\sqrt6,\\sqrt6]\\)."
+  },
+  {
+    "number": 4,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Reading a factored cubic",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Rewrite the expression as \\(5x(x-2)(x-3)\\). Its zeros are 0, 2 and 3, and its leading coefficient is positive. The curve therefore falls to the left and rises to the right, crossing at all three zeros."
+    ],
+    "answer": "C."
+  },
+  {
+    "number": 5,
+    "part": "",
+    "marks": 1,
+    "page": 4,
+    "title": "Integrating a fractional power",
+    "tags": [
+      "Integration"
+    ],
+    "steps": [
+      "Write the integrand as \\((x+5)^{-1/2}\\). Increase the exponent by 1 and divide by the new exponent. There is no extra chain-rule factor because \\(d(x+5)/dx=1\\).",
+      "\\[\\int (x+5)^{-1/2}\\,dx=2\\sqrt{x+5}+C.\\]"
+    ],
+    "answer": "B: \\(2\\sqrt{x+5}+C\\)."
+  },
+  {
+    "number": 6,
+    "part": "",
+    "marks": 1,
+    "page": 5,
+    "title": "Reflecting a graph twice",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The transformation maps every point \\((x,y)\\) to \\((-x,-y)\\): a half-turn about the origin. The asymptotes become \\(x=2\\) and \\(y=-1\\), and the vertical intercept becomes \\((0,-3)\\)."
+    ],
+    "answer": "C."
+  },
+  {
+    "number": 7,
+    "part": "",
+    "marks": 1,
+    "page": 6,
+    "title": "Relative frequency",
+    "tags": [
+      "Probability"
+    ],
+    "steps": [
+      "The estimated probability left for the other nine faces is \\((153-72)/153=81/153\\). Divide this equally among the nine faces:",
+      "\\[P(10)\\approx\\frac{81}{153\\times9}=\\frac1{17}.\\]"
+    ],
+    "answer": "A: \\(1/17\\)."
+  },
+  {
+    "number": 8,
+    "part": "",
+    "marks": 1,
+    "page": 6,
+    "title": "Normal distribution and standard scores",
+    "tags": [
+      "Statistics",
+      "Normal distribution"
+    ],
+    "steps": [
+      "Since \\(\\mu=\\sigma\\), zero is one standard deviation below the mean: \\(z=(0-\\mu)/\\sigma=-1\\). About 68% lies within one standard deviation, so the area above \\(-1\\) is \\(50\\%+34\\%=84\\%\\)."
+    ],
+    "answer": "D: approximately 84%."
+  },
+  {
+    "number": 9,
+    "part": "",
+    "marks": 1,
+    "page": 7,
+    "title": "Estimating change from a derivative graph",
+    "tags": [
+      "Differentiation",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Between \\(x=1\\) and \\(x=1.1\\), the derivative is positive but falls below 2. Hence the increase in \\(f\\) is positive and less than \\(2(0.1)=0.2\\).",
+      "\\[0<\\int_1^{1.1}f\\prime(x)\\,dx<0.2\\quad\\Longrightarrow\\quad6<f(1.1)<6.2.\\]",
+      "The tangent estimate 6.2 is an upper estimate here; the decreasing slope puts the actual value just below it."
+    ],
+    "answer": "B: \\([6.0,6.2)\\)."
+  },
+  {
+    "number": 10,
+    "part": "",
+    "marks": 1,
+    "page": 8,
+    "title": "Stationary points of a composite function",
+    "tags": [
+      "Differentiation",
+      "Functions & graphs",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "The chain rule gives \\(\\frac{d}{dx}f(e^x)=e^x f\\prime(e^x)\\). Because \\(e^x>0\\), a stationary point occurs precisely when \\(f\\prime(e^x)=0\\).",
+      "Only the two stationary points of \\(f\\) with positive input can be reached by \\(e^x\\). Each positive input corresponds to one real value of \\(x\\)."
+    ],
+    "answer": "C: 2 stationary points."
+  },
+  {
+    "number": 11,
+    "part": "a",
+    "marks": 2,
+    "page": 10,
+    "title": "Finding the vertex",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Complete the square: \\(h=t^2-8t+12=(t-4)^2-4\\). The square is smallest at \\(t=4\\), giving \\(h=-4\\)."
+    ],
+    "answer": "\\((t,h)=(4,-4)\\)."
+  },
+  {
+    "number": 11,
+    "part": "b",
+    "marks": 1,
+    "page": 10,
+    "title": "Equal heights on a parabola",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Set \\(h=12\\): \\(t^2-8t+12=12\\), so \\(t(t-8)=0\\). Excluding the supplied solution \\(t=0\\) leaves the other intersection."
+    ],
+    "answer": "\\(t=8\\)."
+  },
+  {
+    "number": 12,
+    "part": "",
+    "marks": 3,
+    "page": 11,
+    "title": "Equation of a tangent",
+    "tags": [
+      "Differentiation"
+    ],
+    "steps": [
+      "Use powers to differentiate: \\(y=5x^3-2x^{-2}-9\\), so \\(y\\prime=15x^2+4x^{-3}\\). At \\(x=1\\), the tangent has gradient 19.",
+      "The point-gradient equation is \\(y+6=19(x-1)\\). Expanding gives the tangent."
+    ],
+    "answer": "\\(y=19x-25\\)."
+  },
+  {
+    "number": 13,
+    "part": "",
+    "marks": 2,
+    "page": 11,
+    "title": "Missing terms in a geometric sequence",
+    "tags": [
+      "Sequences & series"
+    ],
+    "steps": [
+      "Three multiplications by the common ratio take 75 to 2025: \\(75r^3=2025\\). Thus \\(r^3=27\\) and \\(r=3\\).",
+      "The intermediate terms are \\(p=75(3)\\) and \\(q=75(3^2)\\)."
+    ],
+    "answer": "\\(p=225,\\ q=675\\)."
+  },
+  {
+    "number": 14,
+    "part": "a",
+    "marks": 2,
+    "page": 12,
+    "title": "Describing a scatterplot",
+    "tags": [
+      "Statistics",
+      "Regression"
+    ],
+    "steps": [
+      "The points form a roughly straight, downward-sloping band. Larger television times tend to be paired with smaller exercise times."
+    ],
+    "answer": "Approximately linear form; negative direction."
+  },
+  {
+    "number": 14,
+    "part": "b",
+    "marks": 2,
+    "page": 13,
+    "title": "Interpreting regression coefficients",
+    "tags": [
+      "Statistics",
+      "Regression"
+    ],
+    "steps": [
+      "The slope −0.7 means that each additional minute of average daily television time is associated with 0.7 fewer predicted minutes of daily exercise.",
+      "The intercept 64.3 predicts 64.3 minutes of daily exercise for someone with zero average daily television time. These are predictions from an association, not evidence that television causes the change."
+    ],
+    "answer": "Slope: −0.7 minutes per minute. Intercept: 64.3 minutes at zero television time."
+  },
+  {
+    "number": 14,
+    "part": "c",
+    "marks": 1,
+    "page": 13,
+    "title": "Making a regression prediction",
+    "tags": [
+      "Statistics",
+      "Regression"
+    ],
+    "steps": [
+      "Substitute the television time into the fitted line: \\(\\hat y=64.3-0.7(42)=34.9\\)."
+    ],
+    "answer": "34.9 minutes of exercise per day."
+  },
+  {
+    "number": 14,
+    "part": "d",
+    "marks": 1,
+    "page": 13,
+    "title": "Recognising extrapolation",
+    "tags": [
+      "Statistics",
+      "Regression"
+    ],
+    "steps": [
+      "Two hours is 120 minutes, well beyond the observed range (about 0–60 minutes). The observed linear pattern need not continue that far. It would even give \\(64.3-0.7(120)=-19.7\\) minutes, which is impossible."
+    ],
+    "answer": "The prediction extrapolates far beyond the data and gives an impossible negative duration."
+  },
+  {
+    "number": 15,
+    "part": "a",
+    "marks": 2,
+    "page": 14,
+    "title": "Amplitude and period",
+    "tags": [
+      "Trigonometry",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The amplitude sets \\(k=2\\). For a sine function the period is \\(2\\pi/a\\), so \\(2\\pi/a=5\\) gives \\(a=2\\pi/5\\). Use radians."
+    ],
+    "answer": "\\(P_1(t)=2\\sin(2\\pi t/5)\\)."
+  },
+  {
+    "number": 15,
+    "part": "b",
+    "marks": 2,
+    "page": 15,
+    "title": "Sketching a sine wave",
+    "tags": [
+      "Trigonometry",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The second wave has amplitude 4 and period \\(2\\pi/(\\pi/10)=20\\) ms. On the requested interval it traces only the positive half-cycle.",
+      "Draw a smooth arch from \\((0,0)\\) through the maximum \\((5,4)\\) to \\((10,0)\\)."
+    ],
+    "answer": "A positive half-sine wave with peak \\((5,4)\\).",
+    "figure": "sine-waves.svg"
+  },
+  {
+    "number": 15,
+    "part": "c",
+    "marks": 2,
+    "page": 15,
+    "title": "When two functions decrease together",
+    "tags": [
+      "Trigonometry",
+      "Differentiation"
+    ],
+    "steps": [
+      "\\(P_1\\prime(t)=(4\\pi/5)\\cos(2\\pi t/5)\\) is negative on \\((1.25,3.75)\\) and \\((6.25,8.75)\\).",
+      "\\(P_2\\prime(t)=(2\\pi/5)\\cos(\\pi t/10)\\) is negative on \\((5,10)\\). Intersect the intervals; endpoints with zero gradient are excluded."
+    ],
+    "answer": "\\(6.25<t<8.75\\) ms."
+  },
+  {
+    "number": 16,
+    "part": "a",
+    "marks": 4,
+    "page": 16,
+    "title": "Classifying stationary points",
+    "tags": [
+      "Differentiation",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "Write \\(f(x)=x^2e^{-x}\\). The product rule gives \\(f\\prime(x)=e^{-x}(2x-x^2)=xe^{-x}(2-x)\\). Since the exponential is positive, the stationary inputs are 0 and 2.",
+      "The derivative signs are negative for \\(x<0\\), positive for \\(0<x<2\\), and negative for \\(x>2\\). This makes the first point a minimum and the second a maximum.",
+      "\\(f(0)=0\\) and \\(f(2)=4/e^2\\approx0.5413\\)."
+    ],
+    "answer": "Local minimum \\((0,0)\\); local maximum \\((2,4/e^2)\\)."
+  },
+  {
+    "number": 16,
+    "part": "b",
+    "marks": 1,
+    "page": 17,
+    "title": "Completing the curve",
+    "tags": [
+      "Functions & graphs",
+      "Differentiation"
+    ],
+    "steps": [
+      "Join the left branch smoothly to the minimum at the origin. Rise to \\((2,4/e^2)\\), then fall towards the horizontal asymptote \\(y=0\\) from above. The curve touches, rather than crosses, the axis at the origin."
+    ],
+    "answer": "A smooth curve through both stationary points, approaching \\(y=0\\) as \\(x\\to\\infty\\).",
+    "figure": "stationary-curve.svg"
+  },
+  {
+    "number": 17,
+    "part": "a",
+    "marks": 2,
+    "page": 18,
+    "title": "Building a loan recurrence",
+    "tags": [
+      "Financial maths",
+      "Sequences & series"
+    ],
+    "steps": [
+      "Interest is applied before the repayment, so \\(A_{n+1}=1.005A_n-5740\\), with \\(A_0=800000\\).",
+      "\\[A_1=800000(1.005)-5740,\\]",
+      "\\[A_2=1.005[800000(1.005)-5740]-5740.\\]"
+    ],
+    "answer": "\\(A_2=800000(1.005)^2-5740(1.005)-5740\\)."
+  },
+  {
+    "number": 17,
+    "part": "b",
+    "marks": 3,
+    "page": 19,
+    "title": "Summing the repayments",
+    "tags": [
+      "Financial maths",
+      "Sequences & series"
+    ],
+    "steps": [
+      "After \\(n\\) months, subtract the accumulated repayments from the accumulated original loan:",
+      "\\[A_n=800000(1.005)^n-5740\\sum_{j=0}^{n-1}(1.005)^j.\\]",
+      "The geometric sum is \\([(1.005)^n-1]/0.005\\). Since \\(5740/0.005=1148000\\), collect the coefficients of \\((1.005)^n\\)."
+    ],
+    "answer": "\\(A_n=1148000-348000(1.005)^n\\)."
+  },
+  {
+    "number": 17,
+    "part": "c",
+    "marks": 2,
+    "page": 19,
+    "title": "Solving for a repayment milestone",
+    "tags": [
+      "Financial maths",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "Rearrange the strict inequality: \\(1148000-348000(1.005)^n<400000\\) gives \\((1.005)^n>748000/348000\\).",
+      "\\[n>\\frac{\\ln(748000/348000)}{\\ln(1.005)}\\approx153.422.\\]",
+      "The first whole month after this threshold is 154. The balances after months 153 and 154 are about $401,574.11 and $397,841.98 respectively."
+    ],
+    "answer": "154 months."
+  },
+  {
+    "number": 18,
+    "part": "",
+    "marks": 2,
+    "page": 20,
+    "title": "Range of a composite function",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Composing gives \\(g(f(x))=3/(x-1)+5\\), with \\(x\\ne1\\). The reciprocal term cannot equal zero, so the output cannot equal 5.",
+      "Every other output \\(y\\) is possible: choose \\(x=1+3/(y-5)\\)."
+    ],
+    "answer": "\\(( -\\infty,5)\\cup(5,\\infty)\\), or \\(\\mathbb R\\setminus\\{5\\}\\)."
+  },
+  {
+    "number": 19,
+    "part": "",
+    "marks": 3,
+    "page": 20,
+    "title": "Reversing a conditional probability",
+    "tags": [
+      "Probability",
+      "Conditional probability"
+    ],
+    "steps": [
+      "Let \\(W\\) denote a win. The selection probabilities are \\(1/6,2/6,3/6\\). Weight each win probability by its selection probability:",
+      "\\[P(W)=\\tfrac16(0.5)+\\tfrac26(0.4)+\\tfrac36(0.2)=\\frac{19}{60}.\\]",
+      "The joint probability of selecting Amara and winning is \\((1/6)(0.5)=5/60\\). Divide it by the probability of winning: \\(P(A\\mid W)=(5/60)/(19/60)\\)."
+    ],
+    "answer": "\\(5/19\\approx0.2632\\)."
+  },
+  {
+    "number": 20,
+    "part": "",
+    "marks": 3,
+    "page": 21,
+    "title": "Matching a lump sum with an annuity",
+    "tags": [
+      "Financial maths"
+    ],
+    "steps": [
+      "Use the monthly rate \\(0.06/12=0.005\\) and \\(7(12)=84\\) deposits. The lump sum grows to \\(21000(1.005)^{84}\\approx31927.7624\\).",
+      "For end-of-month deposits of \\(M\\), the supplied table gives future value \\(104.07393M\\). Equating the two future values gives \\(M=31927.7624/104.07393\\approx306.7796\\)."
+    ],
+    "answer": "$306.78 per month."
+  },
+  {
+    "number": 21,
+    "part": "a",
+    "marks": 2,
+    "page": 22,
+    "title": "Mode of a continuous distribution",
+    "tags": [
+      "Probability",
+      "Continuous distributions"
+    ],
+    "steps": [
+      "The mode is the input where the density is highest. On \\([1,e]\\), \\(f\\prime(x)=-1/x^2<0\\), so the density decreases from its left endpoint. Outside that interval it is zero."
+    ],
+    "answer": "The mode is \\(x=1\\)."
+  },
+  {
+    "number": 21,
+    "part": "b",
+    "marks": 3,
+    "page": 22,
+    "title": "Finding a percentile by integration",
+    "tags": [
+      "Probability",
+      "Continuous distributions",
+      "Integration"
+    ],
+    "steps": [
+      "The lower quartile leaves probability 0.25 to its left. Accumulate the density from the lower endpoint:",
+      "\\[\\int_1^{Q_1}\\frac1x\\,dx=\\ln Q_1=0.25.\\]",
+      "Exponentiating gives \\(Q_1=e^{1/4}\\approx1.284025\\)."
+    ],
+    "answer": "\\(Q_1=1.284\\) to three decimal places."
+  },
+  {
+    "number": 22,
+    "part": "",
+    "marks": 2,
+    "page": 23,
+    "title": "Proving a trigonometric identity",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "Use a common denominator on the left. The numerator becomes a perfect square:",
+      "\\[\\frac{\\sin^4\\theta+\\cos^4\\theta+2\\sin^2\\theta\\cos^2\\theta}{\\sin^2\\theta\\cos^2\\theta}=\\frac{(\\sin^2\\theta+\\cos^2\\theta)^2}{\\sin^2\\theta\\cos^2\\theta}.\\]",
+      "Now use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) and the reciprocal definitions. The identity holds wherever both sides are defined, so \\(\\sin\\theta\\cos\\theta\\ne0\\)."
+    ],
+    "answer": "\\(1/(\\sin^2\\theta\\cos^2\\theta)=\\sec^2\\theta\\,\\operatorname{cosec}^2\\theta\\)."
+  },
+  {
+    "number": 23,
+    "part": "a",
+    "marks": 4,
+    "page": 24,
+    "title": "Converting a tail count to a weight",
+    "tags": [
+      "Statistics",
+      "Normal distribution"
+    ],
+    "steps": [
+      "There are \\(12600/21=600\\) males. The upper-tail proportion is \\(15/600=0.025\\).",
+      "Using the 95% empirical rule, the upper 2.5% begins about two standard deviations above the mean. Thus \\(x\\approx76.2+2(6.8)=89.8\\).",
+      "If using an inverse-normal calculator instead, \\(z_{0.975}\\approx1.960\\) gives \\(x\\approx89.53\\) kg. The empirical-rule estimate is the one used in the official marking guidelines."
+    ],
+    "answer": "Approximately \\(89.8\\) kg using the empirical rule."
+  },
+  {
+    "number": 23,
+    "part": "b",
+    "marks": 1,
+    "page": 24,
+    "title": "Comparing normal upper tails",
+    "tags": [
+      "Statistics",
+      "Normal distribution"
+    ],
+    "steps": [
+      "There are 12000 females, so 300 would again be 2.5%. But their mean is lower, making \\(x-\\mu\\) larger, and their standard deviation is smaller. Both changes increase the standard score of this same cutoff.",
+      "The female upper-tail proportion is therefore smaller than the male upper-tail proportion. The expected count above the cutoff is less than 300."
+    ],
+    "answer": "No; fewer than 300 females are expected above the cutoff."
+  },
+  {
+    "number": 24,
+    "part": "",
+    "marks": 4,
+    "page": 25,
+    "title": "A tangent shared by two curves",
+    "tags": [
+      "Differentiation",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "The line has gradient 1. For the logarithmic curve, \\(y\\prime=e/x\\), so tangency requires \\(e/x=1\\), hence \\(x=e\\). Its height is \\(e\\ln e=e\\).",
+      "At that same point the quadratic has derivative \\(2ae=1\\), giving \\(a=1/(2e)\\). Substituting the point into the quadratic gives \\(e=ae^2+c=e/2+c\\)."
+    ],
+    "answer": "\\(a=1/(2e),\\quad c=e/2\\)."
+  },
+  {
+    "number": 25,
+    "part": "a",
+    "marks": 2,
+    "page": 26,
+    "title": "Finding an antiderivative by differentiation",
+    "tags": [
+      "Differentiation",
+      "Integration"
+    ],
+    "steps": [
+      "Apply the product rule to \\(x\\cos x\\), remembering the minus sign in front:",
+      "\\[\\frac{d}{dx}(\\sin x-x\\cos x)=\\cos x-(\\cos x-x\\sin x)=x\\sin x.\\]"
+    ],
+    "answer": "The derivative is \\(x\\sin x\\), as required."
+  },
+  {
+    "number": 25,
+    "part": "b",
+    "marks": 2,
+    "page": 26,
+    "title": "Evaluating a signed integral",
+    "tags": [
+      "Integration",
+      "Trigonometry"
+    ],
+    "steps": [
+      "Part (a) supplies the antiderivative. At the upper limit, \\(\\sin(2025\\pi)=0\\) and \\(\\cos(2025\\pi)=-1\\), because 2025 is odd.",
+      "\\[\\int_0^{2025\\pi}x\\sin x\\,dx=[\\sin x-x\\cos x]_0^{2025\\pi}=2025\\pi.\\]"
+    ],
+    "answer": "\\(2025\\pi\\)."
+  },
+  {
+    "number": 25,
+    "part": "c",
+    "marks": 2,
+    "page": 27,
+    "title": "Adding areas rather than signed integrals",
+    "tags": [
+      "Integration",
+      "Sequences & series"
+    ],
+    "steps": [
+      "Area counts every lobe positively. There are 2025 lobes, so sum the supplied absolute areas:",
+      "\\[A=\\pi\\sum_{n=1}^{2025}(2n-1)=\\pi\\frac{2025(1+4049)}2=2025^2\\pi.\\]",
+      "This is much larger than the signed integral because the regions below the axis no longer cancel regions above it."
+    ],
+    "answer": "\\(4100625\\pi\\) square units."
+  },
+  {
+    "number": 26,
+    "part": "a",
+    "marks": 2,
+    "page": 28,
+    "title": "Expressing area in one variable",
+    "tags": [
+      "Optimisation",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The perimeter constraint is \\(2\\pi r+3x=100\\), so \\(r=(100-3x)/(2\\pi)\\). The triangle area is \\(\\tfrac12x^2\\sin60^\\circ=\\sqrt3 x^2/4\\).",
+      "Add the circle area \\(\\pi r^2=(100-3x)^2/(4\\pi)\\) and factor out \\(1/4\\)."
+    ],
+    "answer": "\\(A(x)=\\tfrac14\\left(\\sqrt3 x^2+\\frac{(100-3x)^2}{\\pi}\\right)\\)."
+  },
+  {
+    "number": 26,
+    "part": "b",
+    "marks": 3,
+    "page": 29,
+    "title": "Maximising a quadratic on an interval",
+    "tags": [
+      "Optimisation",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "The allowable interval is \\(0\\leq x\\leq100/3\\), including the limiting all-circle and all-triangle cases. The coefficient of \\(x^2\\) is \\((\\sqrt3+9/\\pi)/4>0\\), so the quadratic opens upwards. Its maximum on this interval must occur at an endpoint.",
+      "\\[A(0)=\\frac{2500}{\\pi}\\approx795.77,\\qquad A(100/3)=\\frac{2500\\sqrt3}{9}\\approx481.13.\\]",
+      "The larger endpoint value is at \\(x=0\\), leaving all 100 cm for the circle."
+    ],
+    "answer": "Maximum area \\(2500/\\pi\\text{ cm}^2\\), when all the wire forms the circle."
+  },
+  {
+    "number": 27,
+    "part": "a",
+    "marks": 2,
+    "page": 30,
+    "title": "Two trapezoids",
+    "tags": [
+      "Integration",
+      "Numerical methods"
+    ],
+    "steps": [
+      "Two equal strips over \\([0,2]\\) have width 1. The three heights are \\(1,1/2,1/4\\). Count the middle height twice:",
+      "\\[T=\\frac12\\left(1+2\\cdot\\frac12+\\frac14\\right)=\\frac98.\\]"
+    ],
+    "answer": "\\(9/8=1.125\\) square units."
+  },
+  {
+    "number": 27,
+    "part": "b",
+    "marks": 2,
+    "page": 30,
+    "title": "Exact exponential area",
+    "tags": [
+      "Integration",
+      "Exponentials & logarithms"
+    ],
+    "steps": [
+      "Write \\((1/2)^x=e^{-x\\ln2}\\). Its antiderivative is \\(-2^{-x}/\\ln2\\).",
+      "\\[A=\\left[-\\frac{2^{-x}}{\\ln2}\\right]_0^2=\\frac{1-1/4}{\\ln2}=\\frac3{4\\ln2}.\\]"
+    ],
+    "answer": "\\(3/(4\\ln2)\\) square units."
+  },
+  {
+    "number": 27,
+    "part": "c",
+    "marks": 2,
+    "page": 31,
+    "title": "Turning an area bound into an inequality",
+    "tags": [
+      "Integration",
+      "Exponentials & logarithms",
+      "Numerical methods"
+    ],
+    "steps": [
+      "The curve is strictly concave up, since \\(y\\prime\\prime=(\\ln2)^2 2^{-x}>0\\). Each trapezoid lies above it, so \\(3/(4\\ln2)<9/8\\).",
+      "As \\(\\ln2>0\\), rearrange to obtain \\(\\ln2>2/3\\), then \\(\\ln(2\\sqrt2)=\\tfrac32\\ln2>1=\\ln e\\). The logarithm is increasing, so the ordering also holds for its arguments."
+    ],
+    "answer": "\\(e<2\\sqrt2\\)."
+  },
+  {
+    "number": 28,
+    "part": "a",
+    "marks": 2,
+    "page": 32,
+    "title": "Area of a circular segment",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "The smaller segment is the sector minus its isosceles triangle. In radians its area is \\(\\tfrac12(10)^2(\\theta-\\sin\\theta)\\).",
+      "It occupies a quarter of the circle: \\(50(\\theta-\\sin\\theta)=25\\pi\\). Divide by 50 and rearrange."
+    ],
+    "answer": "\\(\\theta=\\sin\\theta+\\pi/2\\)."
+  },
+  {
+    "number": 28,
+    "part": "b",
+    "marks": 2,
+    "page": 33,
+    "title": "Estimating an angle graphically",
+    "tags": [
+      "Trigonometry",
+      "Numerical methods"
+    ],
+    "steps": [
+      "Add the line \\(y=\\theta\\) to the supplied graph. Its intersection with \\(y=\\sin\\theta+\\pi/2\\) is near \\(\\theta=2.3\\) radians (numerically about 2.310).",
+      "Arc length is \\(s=r\\theta\\), so \\(s\\approx10(2.3)=23\\) metres. Use the curved boundary, not the straight fence length."
+    ],
+    "answer": "Approximately 23 m.",
+    "figure": "arc-intersection.svg"
+  },
+  {
+    "number": 29,
+    "part": "a",
+    "marks": 1,
+    "page": 34,
+    "title": "Using an angle of elevation",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "In the vertical right triangle through \\(Y\\), \\(\\tan60^\\circ=h/OY\\). Since \\(\\tan60^\\circ=\\sqrt3\\), rearrange for the horizontal distance."
+    ],
+    "answer": "\\(OY=h/\\sqrt3\\)."
+  },
+  {
+    "number": 29,
+    "part": "b",
+    "marks": 3,
+    "page": 35,
+    "title": "Combining two triangles",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "The 45° elevation at \\(F\\) gives \\(OF=h\\). On the ground, \\(\\angle OYF=45^\\circ\\): west and south-west differ by 45°. Apply the cosine rule:",
+      "\\[h^2=\\left(\\frac h{\\sqrt3}\\right)^2+4^2-2\\left(\\frac h{\\sqrt3}\\right)4\\cos45^\\circ.\\]",
+      "Simplifying gives \\(h^2+2\\sqrt6h-24=0\\). Its positive root is \\(h=\\sqrt{30}-\\sqrt6\\approx3.027736\\). Discard the negative root because height is positive."
+    ],
+    "answer": "\\(h=3.03\\) km to two decimal places."
+  },
+  {
+    "number": 29,
+    "part": "c",
+    "marks": 3,
+    "page": 35,
+    "title": "Finding a bearing from components",
+    "tags": [
+      "Trigonometry"
+    ],
+    "steps": [
+      "Use east and north as positive directions and place \\(Y\\) at \\((0,0)\\). Then \\(F=(-2\\sqrt2,-2\\sqrt2)\\) and \\(O=(-h/\\sqrt3,0)\\).",
+      "From \\(F\\) to \\(O\\), the eastward component is \\(2\\sqrt2-h/\\sqrt3\\) and the northward component is \\(2\\sqrt2\\). Both are positive, so the bearing is in the north-east quadrant.",
+      "\\[\\beta=\\tan^{-1}\\!\\left(\\frac{2\\sqrt2-h/\\sqrt3}{2\\sqrt2}\\right)\\approx20.905^\\circ.\\]",
+      "Use the unrounded height from part (b), and express the final bearing with three digits."
+    ],
+    "answer": "Bearing \\(021^\\circ\\)."
+  },
+  {
+    "number": 30,
+    "part": "",
+    "marks": 3,
+    "page": 36,
+    "title": "Translating a parabola",
+    "tags": [
+      "Functions & graphs"
+    ],
+    "steps": [
+      "A shift right by \\(k\\) replaces \\(x\\) with \\(x-k\\); a shift up by \\(k\\) adds \\(k\\). Thus the new curve is \\(y=(x-k-1)(x-k-5)+k\\).",
+      "Substitute \\((6,11)\\): \\(11=(5-k)(1-k)+k=k^2-5k+5\\). This gives \\(k^2-5k-6=(k-6)(k+1)=0\\). Only the positive solution satisfies the condition."
+    ],
+    "answer": "\\(k=6\\)."
+  },
+  {
+    "number": 31,
+    "part": "",
+    "marks": 3,
+    "page": 37,
+    "title": "Counting solutions as a parameter changes",
+    "tags": [
+      "Trigonometry",
+      "Functions & graphs"
+    ],
+    "steps": [
+      "Set \\(u=px\\). Because \\(p>0\\), the input interval becomes \\(0\\leq u\\leq2\\pi p\\). The first three non-negative solutions of \\(\\cos u=1/2\\) are \\(\\pi/3,5\\pi/3,7\\pi/3\\).",
+      "Exactly two solutions means including the second but stopping before the third: \\(5\\pi/3\\leq2\\pi p<7\\pi/3\\). Divide by \\(2\\pi\\).",
+      "The lower endpoint is included because it admits the second solution; the upper endpoint is excluded because it would admit a third."
+    ],
+    "answer": "\\(\\frac56\\leq p<\\frac76\\)."
+  }
+]
